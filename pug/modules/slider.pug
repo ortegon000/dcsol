@@ -1,0 +1,29 @@
+//- Slider
+//- #slides
+//-     img(src='./plugins/slides-js/examples/multiple/img/example-slide-1.jpg', alt='Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/')
+//-     img(src='./plugins/slides-js/examples/multiple/img/example-slide-2.jpg', alt='Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/')
+//-     img(src='./plugins/slides-js/examples/multiple/img/example-slide-3.jpg', alt='Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/')
+//-     img(src='./plugins/slides-js/examples/multiple/img/example-slide-4.jpg', alt='Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/')
+
+
+#carouselExampleIndicators.carousel.slide(data-ride='carousel' data-interval='5000')
+	ol.carousel-indicators
+		li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+		li(data-target='#carouselExampleIndicators', data-slide-to='1')
+		li(data-target='#carouselExampleIndicators', data-slide-to='2')
+
+	.carousel-inner(role='listbox')
+		.carousel-item.active
+			img.d-block.img-fluid(src='https://blog.ianbeyer.com/files/2016/10/10915161_10152528597001956_1761227331268933044_n.png', alt='First slide' style='width: 100%')
+		.carousel-item
+			img.d-block.img-fluid(src='https://cdn-images-1.medium.com/max/1200/1*aCCH418GrsTqzVdEONe33g.png', alt='Second slide' style='width: 100%')
+		.carousel-item
+			img.d-block.img-fluid(src='https://blog.sqlauthority.com/wp-content/uploads/2009/08/microsoft-sql-server-express.png', alt='Third slide' style='width: 100%')
+
+	a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+		span.carousel-control-prev-icon(aria-hidden='true')
+		span.sr-only Previous
+
+	a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+		span.carousel-control-next-icon(aria-hidden='true')
+		span.sr-only Next

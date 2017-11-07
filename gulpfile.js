@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var pug = require('gulp-pug');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
@@ -15,6 +16,18 @@ var banner = ['/*!\n',
   ' */\n',
   ''
 ].join('');
+
+// Compiles PUG files from /pug into /html
+gulp.task('pug', function (){
+  return gulp.src('pug/index.pug')
+    .pipe(pug({
+      pretty: true
+    }))
+    .pipe(gulp.dest('./'))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+});
 
 // Compiles SCSS files from /scss into /css
 gulp.task('sass', function() {
@@ -101,7 +114,8 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() {
+gulp.task('dev', ['browserSync', 'pug', 'sass', 'minify-css', 'minify-js'], function() {
+  gulp.watch('pug/**/*.pug', ['pug']);
   gulp.watch('scss/*.scss', ['sass']);
   gulp.watch('css/*.css', ['minify-css']);
   gulp.watch('js/*.js', ['minify-js']);
