@@ -81,7 +81,7 @@ body {
   -webkit-tap-highlight-color: #1170b7; }
 
 #mainNav {
-  background-color: #212529; }
+  background-color: transparent; }
   #mainNav .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -97,7 +97,10 @@ body {
     #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #0d5388; }
     #mainNav .navbar-brand img {
-      height: 80px; }
+      height: 80px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
@@ -107,6 +110,21 @@ body {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
       color: #1170b7; }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #212529; }
+    #mainNav.navbar-shrink .navbar-brand {
+      font-size: 1.25em;
+      padding: 12px 0;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+    #mainNav.navbar-shrink img {
+      height: 50px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
 
 @media (min-width: 992px) {
   #mainNav {
@@ -116,7 +134,7 @@ body {
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: rgba(33, 37, 41, 0.8); }
+    background-color: transparent; }
     #mainNav .navbar-brand {
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
@@ -517,3 +535,77 @@ ul.social-buttons {
     background-color: #212529; }
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
       background-color: #1170b7; }
+
+#Slider {
+  width: 100%;
+  height: 80vh;
+  background: black; }
+  #Slider .carousel-inner {
+    height: 100%; }
+    #Slider .carousel-inner .carousel-item {
+      height: 100%;
+      overflow: hidden; }
+      #Slider .carousel-inner .carousel-item img {
+        width: auto;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        max-width: inherit; }
+      #Slider .carousel-inner .carousel-item:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #FF512F;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FF512F, #DD2476);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, rgba(204, 43, 94, 0.9), rgba(117, 58, 136, 0.9));
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        z-index: 1; }
+      #Slider .carousel-inner .carousel-item .carousel-caption {
+        text-align: center;
+        color: #fff; }
+        #Slider .carousel-inner .carousel-item .carousel-caption .intro-text {
+          padding-top: 150px;
+          padding-bottom: 100px; }
+          #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-heading {
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 50px;
+            margin-bottom: 25px;
+            font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif; }
+          #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-lead-in {
+            font-size: 22px;
+            font-style: italic;
+            line-height: 22px;
+            margin-bottom: 25px;
+            font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif; }
+          #Slider .carousel-inner .carousel-item .carousel-caption .intro-text #laravel-logo {
+            border-left: 1px solid #dee0df;
+            margin-left: 30px;
+            color: #e74430;
+            font-size: 60px;
+            line-height: 60px;
+            padding: 0 30px;
+            font-family: 'Miriam Libre', sans-serif;
+            text-transform: none; }
+
+@media (min-width: 768px) {
+  #Slider .carousel-inner .carousel-item .carousel-caption .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px; }
+    #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-heading {
+      font-size: 75px;
+      font-weight: 700;
+      line-height: 75px;
+      margin-bottom: 50px;
+      font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif; }
+    #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-lead-in {
+      font-size: 40px;
+      font-style: italic;
+      line-height: 40px;
+      margin-bottom: 25px;
+      font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif; } }
