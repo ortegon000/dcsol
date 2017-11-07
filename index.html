@@ -23,7 +23,6 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
-    <link href="./plugins/slides-js/examples/multiple/css/example.css" rel="stylesheet">
 
   </head>
 
@@ -78,8 +77,7 @@
       <img src="./plugins/slides-js/examples/multiple/img/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
       <img src="./plugins/slides-js/examples/multiple/img/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
       <img src="./plugins/slides-js/examples/multiple/img/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
-      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left"></i></a>
-      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right"></i></a>
+    
     </div>
 
     <!-- Services -->
@@ -730,8 +728,10 @@
     <script type="text/javascript">
       $(function(){
         $("#slides").slidesjs({
-          width: 500,
-          height: 200
+          width:  100,
+          height: 200,
+          pagination: false,
+          navigation: false,
         });
       });
     </script>
