@@ -103,7 +103,7 @@ body {
       transition: all 0.3s; }
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
-    font-weight: 400;
+    font-weight: 600;
     padding: 0.75em 0;
     letter-spacing: 1px;
     color: white;
@@ -594,18 +594,17 @@ ul.social-buttons {
             text-transform: none; }
 
 @media (min-width: 768px) {
-  #Slider .carousel-inner .carousel-item .carousel-caption .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px; }
-    #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-heading {
-      font-size: 75px;
-      font-weight: 700;
-      line-height: 75px;
-      margin-bottom: 50px;
-      font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif; }
-    #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-lead-in {
-      font-size: 40px;
-      font-style: italic;
-      line-height: 40px;
-      margin-bottom: 25px;
-      font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif; } }
+  #Slider .carousel-inner .carousel-item img {
+    width: 100%; }
+  #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-heading {
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 50px;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif; }
+  #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-lead-in {
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif; } }
