@@ -1,5 +1,10 @@
 // Styling for the services section
-.service-heading {
-  margin: 15px 0;
-  text-transform: none;
+#services {
+	.row.text-center {
+		justify-content: center;
+	}
+	.service-heading {
+		margin: 15px 0;
+		text-transform: none;
+	}
 }
