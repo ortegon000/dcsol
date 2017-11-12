@@ -210,6 +210,28 @@ header.masthead {
   margin: 15px 0;
   text-transform: none; }
 
+@keyframes lightSpeedIn {
+  from {
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0; }
+  60% {
+    transform: skewX(20deg);
+    opacity: 1; }
+  80% {
+    transform: skewX(-5deg);
+    opacity: 1; }
+  to {
+    transform: none;
+    opacity: 1; } }
+
+#services .lightSpeedIn {
+  animation-name: lightSpeedIn;
+  animation-timing-function: ease-out; }
+
+#services .animated {
+  animation-duration: 1s;
+  animation-fill-mode: both; }
+
 #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px; }
@@ -579,21 +601,22 @@ ul.social-buttons {
           padding-bottom: 100px; }
           #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-heading {
             font-size: 50px;
-            font-weight: 700;
             line-height: 50px;
             margin-bottom: 25px;
             font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif; }
+            #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-heading #svg-microsoft-azure {
+              width: 100%; }
           #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-lead-in {
-            font-size: 22px;
+            font-size: 30px;
             font-style: italic;
-            line-height: 22px;
+            line-height: 25px;
             margin-bottom: 25px;
             font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif; }
           #Slider .carousel-inner .carousel-item .carousel-caption .intro-text #laravel-logo {
             border-left: 1px solid #dee0df;
             margin-left: 30px;
             color: #e74430;
-            font-size: 60px;
+            font-size: 45px;
             line-height: 60px;
             padding: 0 30px;
             font-family: 'Miriam Libre', sans-serif;
@@ -608,6 +631,12 @@ ul.social-buttons {
     line-height: 75px;
     margin-bottom: 50px;
     font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif; }
+    #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-heading #svg-microsoft-azure {
+      width: 70%; }
+    #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-heading #svg-laravel-logo {
+      height: 70px;
+      margin-bottom: 0;
+      font-size: 0; }
   #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-lead-in {
     font-size: 40px;
     font-style: italic;

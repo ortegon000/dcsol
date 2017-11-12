@@ -39,16 +39,20 @@
 					
 					.intro-heading {
 						font-size: 50px;
-						font-weight: 700;
+						//font-weight: 700;
 						line-height: 50px;
 						margin-bottom: 25px;
 						font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+
+						#svg-microsoft-azure {
+							width: 100%;
+						}
 					}
 
 					.intro-lead-in {
-						font-size: 22px;
+						font-size: 30px;
 						font-style: italic;
-						line-height: 22px;
+						line-height: 25px;
 						margin-bottom: 25px;
 						font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
 					}
@@ -57,13 +61,12 @@
 						border-left: 1px solid #dee0df;
 						margin-left: 30px;
 					    color: #e74430;
-					    font-size: 60px;
+					    font-size: 45px;
 					    line-height: 60px;
 					    padding: 0 30px;
 					    font-family: 'Miriam Libre', sans-serif;
 					    text-transform: none;
 					}
-
 				}
 			}
 		}
@@ -88,6 +91,14 @@
 							line-height: 75px;
 							margin-bottom: 50px;
 							font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+							#svg-microsoft-azure {
+								width: 70%;
+							}
+							#svg-laravel-logo {
+								height: 70px;
+								margin-bottom: 0;
+								font-size: 0;
+							}
 						}
 
 						.intro-lead-in {

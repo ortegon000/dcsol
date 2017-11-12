@@ -49,6 +49,12 @@
     })
     $('.portfolio-modal').on('hidden.bs.modal', function (e) {
         $(".navbar").removeClass("d-none");
-    })
+    });
 
+    $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 500) {
+            $('.service-item').addClass('lightSpeedIn animated');
+        }
+    });
 })(jQuery); // End of use strict
