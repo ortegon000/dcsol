@@ -9,13 +9,9 @@
 		.carousel-item {
 			height: 100%;
 			overflow: hidden;
-			img {
-				width: auto;
-				height: 100%;
-				overflow: hidden;
-				position: relative;
-				max-width: inherit;
-			}
+			background-size: cover;
+			background-position: bottom right;
+			background-repeat: no-repeat; 
 			&:after {
 				content: '';
 				position: absolute;
@@ -73,13 +69,23 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1120px) {
 	#Slider {
 		.carousel-inner{
 			.carousel-item {
 				img {
 					width: 100%;
+					height: auto;
 				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	#Slider {
+		.carousel-inner{
+			.carousel-item {
 				.carousel-caption {
 					.intro-text {
 						//padding-top: 300px;

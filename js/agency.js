@@ -57,4 +57,20 @@
             $('.service-item').addClass('lightSpeedIn animated');
         }
     });
+
+
+    // backgrounds to slider
+    $('.carousel-item').each( function(index, element) {
+        element = $(element);
+        var bgPos = element.attr('data-bg-pos');
+        var bg = element.attr('data-bg');
+
+        element.css('background-image', 'url("'+bg+'")');
+        
+        if (bgPos !== undefined) {
+            element.css('background-position', bgPos);
+        }
+    });
+
+
 })(jQuery); // End of use strict
