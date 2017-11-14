@@ -203,34 +203,12 @@ header.masthead {
       margin-bottom: 50px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; } }
 
-#services .row.text-center {
+#about .row.text-center {
   justify-content: center; }
 
-#services .service-heading {
+#about .service-heading {
   margin: 15px 0;
   text-transform: none; }
-
-@keyframes lightSpeedIn {
-  from {
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0; }
-  60% {
-    transform: skewX(20deg);
-    opacity: 1; }
-  80% {
-    transform: skewX(-5deg);
-    opacity: 1; }
-  to {
-    transform: none;
-    opacity: 1; } }
-
-#services .lightSpeedIn {
-  animation-name: lightSpeedIn;
-  animation-timing-function: ease-out; }
-
-#services .animated {
-  animation-duration: 1s;
-  animation-fill-mode: both; }
 
 #portfolio .portfolio-item {
   right: 0;
@@ -399,6 +377,8 @@ header.masthead {
         font-size: 10px;
         line-height: 14px;
         margin-top: 12px; }
+      .timeline > li .timeline-image i {
+        font-size: 1.5em; }
     .timeline > li.timeline-inverted > .timeline-panel {
       float: right;
       padding: 0 20px 0 100px;
@@ -478,6 +458,28 @@ header.masthead {
         margin-top: 40px; }
     .timeline > li.timeline-inverted > .timeline-panel {
       padding: 0 100px 20px 20px; } }
+
+@keyframes lightSpeedIn {
+  from {
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0; }
+  60% {
+    transform: skewX(20deg);
+    opacity: 1; }
+  80% {
+    transform: skewX(-5deg);
+    opacity: 1; }
+  to {
+    transform: none;
+    opacity: 1; } }
+
+.lightSpeedIn {
+  animation-name: lightSpeedIn;
+  animation-timing-function: ease-out; }
+
+.animated {
+  animation-duration: 1.5s;
+  animation-fill-mode: both; }
 
 .team-member {
   margin-bottom: 50px;

@@ -53,8 +53,8 @@
 
     $(document).scroll(function() {
         var y = $(this).scrollTop();
-        if (y > 500) {
-            $('.service-item').addClass('lightSpeedIn animated');
+        if (y > 400) {
+            $('ul.timeline>li').addClass('lightSpeedIn animated');
         }
     });
 
