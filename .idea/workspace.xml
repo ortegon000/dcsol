@@ -5,7 +5,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/agency.css" afterPath="$PROJECT_DIR$/css/agency.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/agency.min.css" afterPath="$PROJECT_DIR$/css/agency.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_contact.scss" afterPath="$PROJECT_DIR$/scss/_contact.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/agency.min.js" afterPath="$PROJECT_DIR$/js/agency.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_timeline.scss" afterPath="$PROJECT_DIR$/scss/_timeline.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +20,38 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="services-time-line.pug" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pug/modules/services-time-line.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_timeline.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/_timeline.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3562">
+              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="agency.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/agency.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -68,18 +100,18 @@
         <option value="$PROJECT_DIR$/pug/modules/footer.pug" />
         <option value="$PROJECT_DIR$/pug/modules/modals.pug" />
         <option value="$PROJECT_DIR$/pug/modules/clients.pug" />
-        <option value="$PROJECT_DIR$/js/agency.js" />
         <option value="$PROJECT_DIR$/pug/modules/portfolio.pug" />
         <option value="$PROJECT_DIR$/pug/modules/contact.pug" />
-        <option value="$PROJECT_DIR$/scss/_timeline.scss" />
         <option value="$PROJECT_DIR$/pug/index.pug" />
         <option value="$PROJECT_DIR$/pug/modules/nav-bar-menu.pug" />
-        <option value="$PROJECT_DIR$/pug/modules/services-time-line.pug" />
         <option value="$PROJECT_DIR$/scss/_services.scss" />
         <option value="$PROJECT_DIR$/scss/agency.scss" />
         <option value="$PROJECT_DIR$/pug/modules/about.pug" />
         <option value="$PROJECT_DIR$/pug/modules/team.pug" />
         <option value="$PROJECT_DIR$/scss/_contact.scss" />
+        <option value="$PROJECT_DIR$/pug/modules/services-time-line.pug" />
+        <option value="$PROJECT_DIR$/scss/_timeline.scss" />
+        <option value="$PROJECT_DIR$/js/agency.js" />
       </list>
     </option>
   </component>
@@ -178,6 +210,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dcsol" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dcsol" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -296,12 +342,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510184592163</updated>
-      <workItem from="1510184597334" duration="47132000" />
+      <workItem from="1510184597334" duration="47403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47132000" />
+    <option name="totallyTimeSpent" value="47403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1312" y="-8" width="1320" height="784" extended-state="6" />
@@ -450,14 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/agency.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="57" column="9" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pug/index.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -478,14 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_timeline.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1408">
-          <caret line="64" column="30" lean-forward="false" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -522,14 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pug/modules/services-time-line.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_contact.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -542,6 +564,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pug/modules/services-time-line.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_timeline.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3562">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/agency.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
           <folding />
         </state>
       </provider>

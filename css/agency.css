@@ -339,7 +339,8 @@ header.masthead {
   .timeline > li {
     position: relative;
     min-height: 50px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    opacity: 0; }
     .timeline > li:after, .timeline > li:before {
       display: table;
       content: ' '; }
