@@ -497,9 +497,9 @@ header.masthead {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../img/map-image.png");
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/footer_lodyas.png");
   background-repeat: no-repeat;
-  background-position: center; }
+  background-size: cover; }
   section#contact .section-heading {
     color: #fff; }
   section#contact .form-group {
