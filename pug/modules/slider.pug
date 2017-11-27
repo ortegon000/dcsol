@@ -1,3 +1,4 @@
+- var imgPath = 'https://raw.githubusercontent.com/ortegon000/dcsol/master/img/slider/'
 
 #Slider.carousel.slide(data-ride='carousel' data-interval='20000')
 	ol.carousel-indicators
@@ -6,12 +7,12 @@
 		li(data-target='#Slider', data-slide-to='2')
 
 	.carousel-inner(role='listbox')
-		.carousel-item.active(data-bg="/img/slider/1.jpg" data-bg-pos="top center")
+		.carousel-item.active(data-bg=imgPath+"1.jpg" data-bg-pos="top center")
 		
 			.carousel-caption
 				.container
 					.intro-text
-						.intro-lead-in Your vision. Your cloud.
+						.intro-lead-in Your vision. Your cloud..
 						.intro-heading.text-uppercase
 							svg#svg-microsoft-azure(viewbox='0 0 163.985 19.25' height='50%')
 								path(d='M18.525,19.893H16.467V8.037q0-1.4.173-3.438H16.59a10.947,10.947,0,0,1-.53,1.713L10.021,19.893H9.011L2.984,6.411A10.592,10.592,0,0,1,2.455,4.6H2.405q.1,1.059.1,3.463V19.893h-2V2.22H3.243L8.666,14.544a15.8,15.8,0,0,1,.813,2.12h.074q.53-1.455.85-2.169L15.937,2.22h2.588Z', transform='translate(-0.507 -0.939)', fill='#00abec')
@@ -31,7 +32,7 @@
 
 						a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Ver mas
 		
-		.carousel-item(data-bg="/img/slider/2.png")
+		.carousel-item(data-bg=imgPath+"2.png")
 			
 			.carousel-caption
 				.container
@@ -44,7 +45,7 @@
 
 						a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Ver mas
 		
-		.carousel-item(data-bg="/img/slider/3.png" data-bg-pos="top right")
+		.carousel-item(data-bg=imgPath+"3.png" data-bg-pos="top right")
 			
 			.carousel-caption
 				.container
