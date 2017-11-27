@@ -534,6 +534,12 @@ section#contact {
     color: #ced4da;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
+#Clients {
+  background: #dddddd; }
+  #Clients img {
+    max-width: 80%;
+    margin: .5em 0; }
+
 footer {
   padding: 25px 0;
   text-align: center; }
