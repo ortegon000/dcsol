@@ -646,7 +646,10 @@ ul.social-buttons {
             font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif; }
           #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-description {
             font-weight: 100;
-            font-size: 1.6em; }
+            font-size: 1.2em; }
+            @media screen and (min-width: 768px) {
+              #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-description {
+                font-size: 1.5em; } }
           #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .list-platforms .list-item {
             font-size: 1.5em;
             font-family: sans-serif; }
