@@ -28,6 +28,11 @@
 			.carousel-caption {
 				text-align: center;
 				color: #fff;
+				height: 100%;
+
+				.container {
+					z-index: 9;
+				}
 
 				.intro-text {
 					padding-top: 150px;

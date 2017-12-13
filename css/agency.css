@@ -627,7 +627,10 @@ ul.social-buttons {
         z-index: 1; }
       #Slider .carousel-inner .carousel-item .carousel-caption {
         text-align: center;
-        color: #fff; }
+        color: #fff;
+        height: 100%; }
+        #Slider .carousel-inner .carousel-item .carousel-caption .container {
+          z-index: 9; }
         #Slider .carousel-inner .carousel-item .carousel-caption .intro-text {
           padding-top: 150px;
           padding-bottom: 100px; }
