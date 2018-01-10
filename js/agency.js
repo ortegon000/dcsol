@@ -73,26 +73,55 @@
     });
 
     // Datatables
+    $('.dataTable').DataTable({
+        language: {
+            search: "Buscar ",
+            paginate: {
+                next: 'Sig',
+                previous: 'Prev'
+            },
+            infoEmpty: 'Viendo 0 de 0 registros',
+            emptyTable: 'No hay registros en la tabla',
+            info: "<em><small>Mostrando _START_ a _END_ de _TOTAL_ registros</small></em>",
+            lengthMenu: "Ver _MENU_ registros"
+        }
+    });
+
     $('#filter_table').DataTable();
     $('#buttons_table').DataTable({
-        dom: 'Blfrtip',
+        dom: 'flBrtip',
         buttons: [
-            'copy',
-            'pdf',
             {
-                extend: 'excel',
-                messageTop: 'The information in this table is copyright to Sirius Cybernetics Corp.'
+                extend: 'copy',
+                'text': 'Copiar'
+
             },
-        ]
+            'pdf',
+            'excel'
+        ],
+        language: {
+
+            search: "Buscar ",
+            paginate: {
+                next: 'Sig',
+                previous: 'Prev'
+            },
+            infoEmpty: 'Viendo 0 de 0 registros',
+            emptyTable: 'No hay registros en la tabla',
+            info: "<em><small>Mostrando _START_ a _END_ de _TOTAL_ registros</small></em>",
+            lengthMenu: "Ver _MENU_ registros"
+        }
     });
 
     // Collapse
     var group = $('#tablesGroup');
+    var samples = $('#samples-tab');
     group.on('show.bs.collapse','.collapse', function() {
         group.find('.collapse.show').collapse('hide');
     });
-
-
+    samples.on('click', function () {
+        group.find('.collapse.show').collapse('hide');
+    });
 
 })(jQuery); // End of use strict
 

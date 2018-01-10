@@ -63,6 +63,11 @@
 		z-index: 2;
 	}
 
+	.dataTables_filter {
+		right: 0;
+		position: absolute;
+	}
+
 	#myTab li a {
 		font-family: Montserrat, sans-serif;
 		font-weight: 600;

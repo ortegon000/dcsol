@@ -262,6 +262,9 @@ header.masthead {
         font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   #portfolio * {
     z-index: 2; }
+  #portfolio .dataTables_filter {
+    right: 0;
+    position: absolute; }
   #portfolio #myTab li a {
     font-family: Montserrat, sans-serif;
     font-weight: 600; }
