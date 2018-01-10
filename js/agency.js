@@ -88,8 +88,9 @@
     });
 
     $('#filter_table').DataTable();
+
     $('#buttons_table').DataTable({
-        dom: 'flBrtip',
+        dom: 'Bflrtp',
         buttons: [
             {
                 extend: 'copy',
