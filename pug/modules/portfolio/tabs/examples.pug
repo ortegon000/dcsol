@@ -1,0 +1,37 @@
+#ejemplos.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='profile-tab')
+    .row
+        .col-md-4.col-sm-6.portfolio-item
+            a.portfolio-link(data-toggle='collapse', data-parent='#tablesGroup', href='#collapseBasicTable' role='button', aria-expanded='false', aria-controls='collapseExample')
+                .portfolio-hover
+                    .portfolio-hover-content
+                        i.fa.fa-plus.fa-3x
+                img.img-fluid.w-100(src='/img/portfolio/basic_table.png', alt='')
+            .portfolio-caption
+                h4 Tabla básica
+                p.text-muted Tabla con configuración básica
+
+        .col-md-4.col-sm-6.portfolio-item
+            a.portfolio-link(data-toggle='collapse', data-parent='#tablesGroup', href='#collapseFilterTable' role='button', aria-expanded='false', aria-controls='collapseExample')
+
+                .portfolio-hover
+                    .portfolio-hover-content
+                        i.fa.fa-plus.fa-3x
+                img.img-fluid.w-100(src='/img/portfolio/filter_table.png', alt='')
+            .portfolio-caption
+                h4 Tabla con filtros
+                p.text-muted Busqueda por medio de filtros
+
+        .col-md-4.col-sm-6.portfolio-item
+            a.portfolio-link(data-toggle='collapse', data-parent='#tablesGroup', href='#collapseButtonsTable' role='button', aria-expanded='false', aria-controls='collapseExample')
+
+                .portfolio-hover
+                    .portfolio-hover-content
+                        i.fa.fa-plus.fa-3x
+                img.img-fluid.w-100(src='/img/portfolio/buttons_table.png', alt='')
+            .portfolio-caption
+                h4 Tabla avanzada
+                p.text-muted Copy, PDF, Excel
+
+include ../collapse/basic_table
+include ../collapse/filter_table
+include ../collapse/buttons_table

@@ -72,6 +72,27 @@
         }
     });
 
+    // Datatables
+    $('#filter_table').DataTable();
+    $('#buttons_table').DataTable({
+        dom: 'Blfrtip',
+        buttons: [
+            'copy',
+            'pdf',
+            {
+                extend: 'excel',
+                messageTop: 'The information in this table is copyright to Sirius Cybernetics Corp.'
+            },
+        ]
+    });
+
+    // Collapse
+    var group = $('#tablesGroup');
+    group.on('show.bs.collapse','.collapse', function() {
+        group.find('.collapse.show').collapse('hide');
+    });
+
+
 
 })(jQuery); // End of use strict
 

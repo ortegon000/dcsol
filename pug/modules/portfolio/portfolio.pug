@@ -1,0 +1,22 @@
+//- Portfolio
+section#portfolio
+    .container
+        .row
+            .col-lg-12.text-center
+                h2.section-heading.text-uppercase.text-primary.pb-3 Portfolio
+                //h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+        .row
+            .col-md-12
+                ul#myTab.nav.nav-tabs(role='tablist')
+                    li.nav-item
+                        a#home-tab.nav-link.active(data-toggle='tab', href='#ejemplos', role='tab', aria-controls='home', aria-selected='true') Ejemplos en linea
+                    li.nav-item
+                        a#profile-tab.nav-link(data-toggle='tab', href='#muestra', role='tab', aria-controls='profile', aria-selected='false') Muestra
+
+                .card.bg-transparent
+                    .card-body
+                        .tab-content#tablesGroup
+                            include tabs/examples
+                            include tabs/samples
+    #test
+        svg#svg

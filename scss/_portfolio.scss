@@ -63,6 +63,11 @@
 		z-index: 2;
 	}
 
+	#myTab li a {
+		font-family: Montserrat, sans-serif;
+		font-weight: 600;
+	}
+
 	#test {
 		box-sizing: border-box;
 		height:100%;
@@ -73,6 +78,7 @@
 		top: 0;
 		z-index: 0;
 		background-image: radial-gradient(circle,rgb(0, 34, 35),black);
+		box-shadow: inset 5000px 5000px rgba(#333333, .2);
 	}
 
 	#svg {

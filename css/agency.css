@@ -262,6 +262,9 @@ header.masthead {
         font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   #portfolio * {
     z-index: 2; }
+  #portfolio #myTab li a {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600; }
   #portfolio #test {
     box-sizing: border-box;
     height: 100%;
@@ -271,7 +274,8 @@ header.masthead {
     position: absolute;
     top: 0;
     z-index: 0;
-    background-image: radial-gradient(circle, #002223, black); }
+    background-image: radial-gradient(circle, #002223, black);
+    box-shadow: inset 5000px 5000px rgba(51, 51, 51, 0.2); }
   #portfolio #svg {
     box-sizing: border-box;
     height: 100%;

@@ -9,6 +9,9 @@
     <title>DCSol - Soluciones para tu negocio</title>
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Datatables-->
+    <link href="plugins/Datatables/datatables.min.css">
+    <link href="plugins/Datatables/buttons.dataTables.min.css">
     <!-- Custom fonts for this template-->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -184,36 +187,207 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase text-white pb-3">Casos de éxito</h2>
+          <h2 class="section-heading text-uppercase text-primary pb-3">Portfolio</h2>
           <!--h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.-->
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-            </div><img class="img-fluid" src="http://www.inversainstalaciones.com.mx/wp-content/uploads/2017/05/IMG_0051.jpg" alt=""></a>
-          <div class="portfolio-caption">
-            <h4>Software a medida</h4>
-            <p class="text-muted">Illustration</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-            </div><img class="img-fluid" src="http://www.inversainstalaciones.com.mx/wp-content/uploads/2017/05/IMG_0051.jpg" alt=""></a>
-          <div class="portfolio-caption">
-            <h4>Aplicación móvil</h4>
-            <p class="text-muted">Illustration</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
-            </div><img class="img-fluid" src="http://www.inversainstalaciones.com.mx/wp-content/uploads/2017/05/IMG_0051.jpg" alt=""></a>
-          <div class="portfolio-caption">
-            <h4>Sistema de nómina</h4>
-            <p class="text-muted">Illustration</p>
+        <div class="col-md-12">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#ejemplos" role="tab" aria-controls="home" aria-selected="true">Ejemplos en linea</a></li>
+            <li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#muestra" role="tab" aria-controls="profile" aria-selected="false">Muestra</a></li>
+          </ul>
+          <div class="card bg-transparent">
+            <div class="card-body">
+              <div class="tab-content" id="tablesGroup">
+                <div class="tab-pane fade show active" id="ejemplos" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="row">
+                    <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" data-toggle="collapse" data-parent="#tablesGroup" href="#collapseBasicTable" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid w-100" src="/img/portfolio/basic_table.png" alt=""></a>
+                      <div class="portfolio-caption">
+                        <h4>Tabla básica</h4>
+                        <p class="text-muted">Tabla con configuración básica</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" data-toggle="collapse" data-parent="#tablesGroup" href="#collapseFilterTable" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid w-100" src="/img/portfolio/filter_table.png" alt=""></a>
+                      <div class="portfolio-caption">
+                        <h4>Tabla con filtros</h4>
+                        <p class="text-muted">Busqueda por medio de filtros</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" data-toggle="collapse" data-parent="#tablesGroup" href="#collapseButtonsTable" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                        </div><img class="img-fluid w-100" src="/img/portfolio/buttons_table.png" alt=""></a>
+                      <div class="portfolio-caption">
+                        <h4>Tabla avanzada</h4>
+                        <p class="text-muted">Copy, PDF, Excel</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="collapseBasicTable">
+                  <div class="card card-body">
+                    <div class="body table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>FIRST NAME</th>
+                            <th>LAST NAME</th>
+                            <th>USERNAME</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Larry</td>
+                            <td>Jellybean</td>
+                            <td>@lajelly</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Larry</td>
+                            <td>Kikat</td>
+                            <td>@lakitkat</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="collapseFilterTable">
+                  <div class="card card-body">
+                    <div class="body table-responsive">
+                      <table class="table" id="filter_table">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>FIRST NAME</th>
+                            <th>LAST NAME</th>
+                            <th>USERNAME</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Larry</td>
+                            <td>Jellybean</td>
+                            <td>@lajelly</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Larry</td>
+                            <td>Kikat</td>
+                            <td>@lakitkat</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="collapseButtonsTable">
+                  <div class="card card-body">
+                    <div class="body table-responsive">
+                      <table class="table mt-5" id="buttons_table">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>FIRST NAME</th>
+                            <th>LAST NAME</th>
+                            <th>USERNAME</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Larry</td>
+                            <td>Jellybean</td>
+                            <td>@lajelly</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Larry</td>
+                            <td>Kikat</td>
+                            <td>@lakitkat</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="muestra" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                      <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
+                      </div><img class="img-fluid" src="http://www.inversainstalaciones.com.mx/wp-content/uploads/2017/05/IMG_0051.jpg" alt=""></a>
+                    <div class="portfolio-caption">
+                      <h4>Software a medida</h4>
+                      <p class="text-muted">Otros</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -253,56 +427,7 @@
       </div>
     </div>
   </section>
-  <section class="bg-light" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase text-primary">Nuestro asombroso equipo de trabajo</h2>
-          <h3 class="section-subheading text-muted"></h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="team-member"><img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-            <h4>Kay Garland</h4>
-            <p class="text-muted">Lead Designer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member"><img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-            <h4>Larry Parker</h4>
-            <p class="text-muted">Lead Marketer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member"><img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-            <h4>Diana Pertersen</h4>
-            <p class="text-muted">Lead Developer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!--include modules/team.pug-->
   <!--include modules/clients.pug-->
   <section id="contact">
     <div class="container">
@@ -546,5 +671,11 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/contact_me.js"></script>
+  <script src="plugins/Datatables/datatables.min.js"></script>
+  <script src="plugins/Datatables/dataTables.buttons.min.js"></script>
+  <script src="plugins/Datatables/jszip.min.js"></script>
+  <script src="plugins/Datatables/buttons.html5.min.js"></script>
+  <script src="plugins/Datatables/pdfmake.min.js"></script>
+  <script src="plugins/Datatables/vfs_fonts.js"></script>
   <script src="js/agency.min.js"></script>
 </html>
