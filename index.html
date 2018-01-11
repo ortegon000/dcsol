@@ -9,6 +9,10 @@
     <title>DCSol - Soluciones para tu negocio</title>
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Select2-->
+    <link href="plugins/Select2/select2.min.css" rel="stylesheet">
+    <!-- DatePicker-->
+    <link href="plugins/DatePicker/datepicker.min.css" rel="stylesheet">
     <!-- Datatables-->
     <link href="plugins/Datatables/datatables.min.css">
     <link href="plugins/Datatables/buttons.dataTables.min.css">
@@ -674,88 +678,90 @@
                 </div>
                 <div class="collapse" id="collapseBasicForm">
                   <div class="card card-body">
-                    <div class="body"></div>
-                    <form>
-                      <div class="row form-group">
-                        <div class="col-md-4">
-                          <label class="col-form-label" for="staticName">Nombre</label>
-                          <input class="form-control" id="staticName" type="text">
+                    <div class="body">
+                      <form>
+                        <div class="row form-group">
+                          <div class="col-md-4">
+                            <label class="col-form-label" for="staticName">Nombre</label>
+                            <input class="form-control" id="staticName" type="text">
+                          </div>
+                          <div class="col-md-4">
+                            <label class="col-form-label w-100" for="jobPosition">Puesto</label>
+                            <select class="form-control select2 w-100" id="jobPosition">
+                              <option selected="">Seleccionar</option>
+                              <option>Puesto 1</option>
+                              <option>Puesto 2</option>
+                              <option>Puesto 3</option>
+                              <option>Puesto 4</option>
+                              <option>Puesto 5</option>
+                            </select>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="col-form-label" for="staticOffice">Oficina</label>
+                            <input class="form-control" id="staticOffice" type="text">
+                          </div>
                         </div>
-                        <div class="col-md-4">
-                          <label class="col-form-label" for="inputState">Puesto</label>
-                          <select class="form-control" id="inputState">
-                            <option selected="">Seleccionar</option>
-                            <option>Puesto 1</option>
-                            <option>Puesto 2</option>
-                            <option>Puesto 3</option>
-                            <option>Puesto 4</option>
-                            <option>Puesto 5</option>
-                          </select>
+                        <div class="row form-group">
+                          <div class="col-md-4">
+                            <label class="col-form-label" for="staticAge">Edad</label>
+                            <input class="form-control" id="staticAge" type="text">
+                          </div>
+                          <div class="col-md-4">
+                            <label class="col-form-label" for="staticStartDate">Fecha de inicio</label>
+                            <input class="form-control datepicker" id="staticStartDate" type="text">
+                          </div>
+                          <div class="col-md-4">
+                            <label class="col-form-label" for="staticSalary">Salario</label>
+                            <input class="form-control" id="staticSalary" type="text">
+                          </div>
                         </div>
-                        <div class="col-md-4">
-                          <label class="col-form-label" for="staticOffice">Oficina</label>
-                          <input class="form-control" id="staticOffice" type="text">
-                        </div>
-                      </div>
-                      <div class="row form-group">
-                        <div class="col-md-4">
-                          <label class="col-form-label" for="staticAge">Edad</label>
-                          <input class="form-control" id="staticAge" type="text">
-                        </div>
-                        <div class="col-md-4">
-                          <label class="col-form-label" for="staticStartDate">Fecha de inicio</label>
-                          <input class="form-control" id="staticStartDate" type="text">
-                        </div>
-                        <div class="col-md-4">
-                          <label class="col-form-label" for="staticSalary">Salario</label>
-                          <input class="form-control" id="staticSalary" type="text">
-                        </div>
-                      </div>
-                      <button class="btn btn-success">Guardar</button>
-                    </form>
+                        <button class="btn btn-success">Guardar</button>
+                      </form>
+                    </div>
                   </div>
                 </div>
-                <div class="collapse" id="collapseAdvancedForm">
+                <div class="collapse advanced" id="collapseAdvancedForm">
                   <div class="card card-body">
-                    <div class="body"></div>
-                    <form>
-                      <div class="row form-group">
-                        <div class="col-md-4">
-                          <label class="col-form-label" for="staticName">Nombre</label>
-                          <input class="form-control" id="staticName" type="text">
+                    <div class="body">
+                      <form>
+                        <div class="row form-group">
+                          <div class="col-md-4">
+                            <label class="col-form-label" for="staticName">Nombre</label>
+                            <input class="form-control" id="staticName" type="text">
+                          </div>
+                          <div class="col-md-4">
+                            <label class="col-form-label w-100" for="jobPosition">Puesto</label>
+                            <select class="form-control select2 w-100" id="jobPosition">
+                              <option selected="">Seleccionar</option>
+                              <option>Puesto 1</option>
+                              <option>Puesto 2</option>
+                              <option>Puesto 3</option>
+                              <option>Puesto 4</option>
+                              <option>Puesto 5</option>
+                            </select>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="col-form-label" for="staticOffice">Oficina</label>
+                            <input class="form-control" id="staticOffice" type="text">
+                          </div>
                         </div>
-                        <div class="col-md-4">
-                          <label class="col-form-label" for="inputState">Puesto</label>
-                          <select class="form-control" id="inputState">
-                            <option selected="">Seleccionar</option>
-                            <option>Puesto 1</option>
-                            <option>Puesto 2</option>
-                            <option>Puesto 3</option>
-                            <option>Puesto 4</option>
-                            <option>Puesto 5</option>
-                          </select>
+                        <div class="row form-group">
+                          <div class="col-md-4">
+                            <label class="col-form-label" for="staticAge">Edad</label>
+                            <input class="form-control" id="staticAge" type="text">
+                          </div>
+                          <div class="col-md-4">
+                            <label class="col-form-label" for="staticStartDate">Fecha de inicio</label>
+                            <input class="form-control datepicker" id="staticStartDate" type="text">
+                          </div>
+                          <div class="col-md-4">
+                            <label class="col-form-label" for="staticSalary">Salario</label>
+                            <input class="form-control" id="staticSalary" type="text">
+                          </div>
                         </div>
-                        <div class="col-md-4">
-                          <label class="col-form-label" for="staticOffice">Oficina</label>
-                          <input class="form-control" id="staticOffice" type="text">
-                        </div>
-                      </div>
-                      <div class="row form-group">
-                        <div class="col-md-4">
-                          <label class="col-form-label" for="staticAge">Edad</label>
-                          <input class="form-control" id="staticAge" type="text">
-                        </div>
-                        <div class="col-md-4">
-                          <label class="col-form-label" for="staticStartDate">Fecha de inicio</label>
-                          <input class="form-control" id="staticStartDate" type="text">
-                        </div>
-                        <div class="col-md-4">
-                          <label class="col-form-label" for="staticSalary">Salario</label>
-                          <input class="form-control" id="staticSalary" type="text">
-                        </div>
-                      </div>
-                      <button class="btn btn-success">Guardar</button>
-                    </form>
+                        <button class="btn btn-success">Guardar</button>
+                      </form>
+                    </div>
                   </div>
                 </div>
                 <div class="tab-pane fade" id="muestra" role="tabpanel" aria-labelledby="profile-tab">
@@ -1054,5 +1060,7 @@
   <script src="plugins/Datatables/buttons.html5.min.js"></script>
   <script src="plugins/Datatables/pdfmake.min.js"></script>
   <script src="plugins/Datatables/vfs_fonts.js"></script>
+  <script src="plugins/Select2/select2.min.js"></script>
+  <script src="plugins/DatePicker/datepicker.min.js"></script>
   <script src="js/agency.min.js"></script>
 </html>

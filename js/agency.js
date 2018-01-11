@@ -66,7 +66,7 @@
         var bg = element.attr('data-bg');
 
         element.css('background-image', 'url("'+bg+'")');
-        
+
         if (bgPos !== undefined) {
             element.css('background-position', bgPos);
         }
@@ -135,7 +135,14 @@
         group.find('.collapse.show').collapse('hide');
     });
 
+    // Select2
+    $('.advanced .select2').select2({ width: '100%' });
+
+    // DatePicker
+    $('.advanced .datepicker').datepicker();
+
 })(jQuery); // End of use strict
+
 
 //////////////////////////////////////// variables
 
@@ -148,7 +155,7 @@ var dotMatrix = document.createElementNS("http://www.w3.org/2000/svg", 'circle')
 var dots = [];
 var lineMatrix = document.createElementNS("http://www.w3.org/2000/svg", 'line');
 var lines = [];
-var dotNumber = 300;
+var dotNumber = 500;
 var lineNumber = 5;
 
 var screenW;
