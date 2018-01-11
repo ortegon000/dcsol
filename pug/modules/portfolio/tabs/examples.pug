@@ -32,6 +32,31 @@
                 h4.text-primary Tabla avanzada
                 p.text-muted Copy, PDF, Excel
 
+    .row
+        .col-md-4.col-sm-6.portfolio-item
+            a.portfolio-link(data-toggle='collapse', data-parent='#tablesGroup', href='#collapseBasicForm' role='button', aria-expanded='false', aria-controls='collapseExample')
+                .portfolio-hover
+                    .portfolio-hover-content
+                        i.fa.fa-plus.fa-3x
+                //img.img-fluid.w-100(src=imgPath + 'buttons_table.png', alt='Tabla avanzada')
+                img.img-fluid.w-100(src='/img/portfolio/basic_form.png', alt='Formulario bàsico')
+            .portfolio-caption
+                h4.text-primary Formulario básico
+                p.text-muted Configuración basica
+
+        .col-md-4.col-sm-6.portfolio-item
+            a.portfolio-link(data-toggle='collapse', data-parent='#tablesGroup', href='#collapseAdvancedForm' role='button', aria-expanded='false', aria-controls='collapseExample')
+                .portfolio-hover
+                    .portfolio-hover-content
+                        i.fa.fa-plus.fa-3x
+                //img.img-fluid.w-100(src=imgPath + 'buttons_table.png', alt='Tabla avanzada')
+                img.img-fluid.w-100(src='/img/portfolio/basic_form.png', alt='Formulario avanzado')
+            .portfolio-caption
+                h4.text-primary Formulario avanzado
+                p.text-muted Configuración avanzado
+
 include ../collapse/basic_table
 include ../collapse/filter_table
 include ../collapse/buttons_table
+include ../collapse/basic_form
+include ../collapse/advanced_form

@@ -1,0 +1,33 @@
+#collapseAdvancedForm.collapse
+    .card.card-body
+        .body
+        form
+            .row.form-group
+                .col-md-4
+                    label.col-form-label(for='staticName') Nombre
+                    input#staticName.form-control(type='text')
+                .col-md-4
+                    label.col-form-label(for='inputState') Puesto
+                    select#inputState.form-control
+                        option(selected='') Seleccionar
+                        option Puesto 1
+                        option Puesto 2
+                        option Puesto 3
+                        option Puesto 4
+                        option Puesto 5
+                .col-md-4
+                    label.col-form-label(for='staticOffice') Oficina
+                    input#staticOffice.form-control(type='text')
+
+            .row.form-group
+                .col-md-4
+                    label.col-form-label(for='staticAge') Edad
+                    input#staticAge.form-control(type='text')
+                .col-md-4
+                    label.col-form-label(for='staticStartDate') Fecha de inicio
+                    input#staticStartDate.form-control(type='text')
+                .col-md-4
+                    label.col-form-label(for='staticSalary') Salario
+                    input#staticSalary.form-control(type='text')
+
+            button.btn.btn-success Guardar

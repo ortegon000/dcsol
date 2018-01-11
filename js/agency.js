@@ -87,9 +87,9 @@
         }
     });
 
-    $('#filter_table').DataTable();
+    $('.filter .table').DataTable();
 
-    $('#buttons_table').DataTable({
+    $('.buttons .table').DataTable({
         dom: 'Bflrtp',
         buttons: [
             {
@@ -113,6 +113,17 @@
             lengthMenu: "Ver _MENU_ registros"
         }
     });
+
+    $('.table tbody').prepend(
+        '<tr>' +
+            '<td>1</td>' +
+            '<td>2</td>' +
+            '<td>3</td>' +
+            '<td>4</td>' +
+            '<td>5</td>' +
+            '<td>6</td>' +
+        '</tr>'
+    );
 
     // Collapse
     var group = $('#tablesGroup');
