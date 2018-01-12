@@ -55,8 +55,20 @@
                 h4.text-primary Uso de plugins
                 p.text-muted Formulario con plugins
 
+        .col-md-4.col-sm-6.portfolio-item
+            a.portfolio-link(data-toggle='collapse', data-parent='#tablesGroup', href='#collapseWizardForm' role='button', aria-expanded='false', aria-controls='collapseExample' style='height: 150px')
+                .portfolio-hover
+                    .portfolio-hover-content
+                        i.fa.fa-search.fa-3x
+                //img.img-fluid.w-100(src=imgPath + 'buttons_table.png', alt='Tabla avanzada')
+                img.img-fluid.w-100.h-100(src='/img/portfolio/wizard_form.png', alt='Formulario avanzado')
+            .portfolio-caption
+                h4.text-primary Paso a paso
+                p.text-muted Formulario con ayuda
+
 include ../collapse/basic_table
 include ../collapse/filter_table
 include ../collapse/buttons_table
 include ../collapse/basic_form
 include ../collapse/advanced_form
+include ../collapse/wizard_form

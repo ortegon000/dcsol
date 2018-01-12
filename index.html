@@ -18,6 +18,8 @@
     <link href="plugins/Datatables/buttons.dataTables.min.css">
     <!-- SweetAlert-->
     <link href="plugins/SweetAlert/sweetalert.css" rel="stylesheet">
+    <!-- Wizard-->
+    <link href="plugins/Wizard/jquery.steps.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -254,6 +256,16 @@
                       <div class="portfolio-caption">
                         <h4 class="text-primary">Uso de plugins</h4>
                         <p class="text-muted">Formulario con plugins</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item"><a class="portfolio-link" data-toggle="collapse" data-parent="#tablesGroup" href="#collapseWizardForm" role="button" aria-expanded="false" aria-controls="collapseExample" style="height: 150px;">
+                        <div class="portfolio-hover">
+                          <div class="portfolio-hover-content"><i class="fa fa-search fa-3x"></i></div>
+                        </div>
+                        <!--img.img-fluid.w-100(src=imgPath + 'buttons_table.png', alt='Tabla avanzada')--><img class="img-fluid w-100 h-100" src="/img/portfolio/wizard_form.png" alt="Formulario avanzado"></a>
+                      <div class="portfolio-caption">
+                        <h4 class="text-primary">Paso a paso</h4>
+                        <p class="text-muted">Formulario con ayuda</p>
                       </div>
                     </div>
                   </div>
@@ -766,6 +778,51 @@
                     </div>
                   </div>
                 </div>
+                <div class="collapse advanced" id="collapseWizardForm">
+                  <div class="card card-body">
+                    <div class="body">
+                      <form id="wizard_form" action="#">
+                        <div>
+                          <h3>Account</h3>
+                          <section>
+                            <label for="userName">User name *</label>
+                            <input class="form-control required" id="userName" name="userName" type="text">
+                            <label for="password">Password *</label>
+                            <input class="required" id="password" name="password" type="text">
+                            <label for="confirm">Confirm Password *</label>
+                            <input class="required" id="confirm" name="confirm" type="text">
+                            <p>(*) Mandatory</p>
+                          </section>
+                          <h3>Profile</h3>
+                          <section>
+                            <label for="name">First name *</label>
+                            <input class="required" id="name" name="name" type="text">
+                            <label for="surname">Last name *</label>
+                            <input class="required" id="surname" name="surname" type="text">
+                            <label for="email">Email *</label>
+                            <input class="required email" id="email" name="email" type="text">
+                            <label for="address">Address</label>
+                            <input id="address" name="address" type="text">
+                            <p>(*) Mandatory</p>
+                          </section>
+                          <h3>Hints</h3>
+                          <section>
+                            <ul>
+                              <li>Foo</li>
+                              <li>Bar</li>
+                              <li>Foobar</li>
+                            </ul>
+                          </section>
+                          <h3>Finish</h3>
+                          <section>
+                            <input class="required" id="acceptTerms" name="acceptTerms" type="checkbox">
+                            <label for="acceptTerms">I agree with the Terms and Conditions.</label>
+                          </section>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
                 <div class="tab-pane fade" id="muestra" role="tabpanel" aria-labelledby="profile-tab">
                   <div class="col-md-4 col-sm-6 portfolio-item">
                     <h1 class="text-white">Agregar screenshots de App</h1>
@@ -1065,5 +1122,8 @@
   <script src="plugins/Select2/select2.min.js"></script>
   <script src="plugins/DatePicker/datepicker.min.js"></script>
   <script src="plugins/SweetAlert/sweetalert.min.js"></script>
+  <script src="plugins/Wizard/jquery.validate.js"></script>
+  <script src="plugins/Wizard/jquery.steps.js"></script>
+  <script src="plugins/Wizard/form-wizard.js"></script>
   <script src="js/agency.min.js"></script>
 </html>
