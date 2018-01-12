@@ -193,6 +193,7 @@
         headerTag: "h3",
         bodyTag: "section",
         transitionEffect: "slideLeft",
+        stepsOrientation: 1,
         onStepChanging: function (event, currentIndex, newIndex)
         {
             form.validate().settings.ignore = ":disabled,:hidden";
@@ -209,6 +210,27 @@
         }
     });
 
+    // Cleave
+    var creditCard = new Cleave($('#creditCard'), {
+        creditCard: true,
+        onCreditCardTypeChanged: function (type) {
+            $('.type').html(type.toUpperCase());
+        }
+    });
+
+    var cleaveDate = new Cleave($('#cleaveDate'), {
+       date: true,
+       datePattern: ['Y', 'm', 'd']
+    });
+
+    var cleaveSalary = new Cleave($('#cleaveSalary'), {
+        numeral: true,
+        prefix: '$'
+    })
+
+    $('.category').select2({
+        width: '100%'
+    });
 })(jQuery); // End of use strict
 
 

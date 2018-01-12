@@ -783,17 +783,70 @@
                     <div class="body">
                       <form id="wizard_form" action="#">
                         <div>
-                          <h3>Account</h3>
+                          <h3>Cuenta</h3>
                           <section>
-                            <label for="userName">User name *</label>
-                            <input class="form-control required" id="userName" name="userName" type="text">
-                            <label for="password">Password *</label>
-                            <input class="required" id="password" name="password" type="text">
-                            <label for="confirm">Confirm Password *</label>
-                            <input class="required" id="confirm" name="confirm" type="text">
-                            <p>(*) Mandatory</p>
+                            <div class="row form-group">
+                              <div class="col-md-6">
+                                <label for="userName">Nombre *</label>
+                                <input class="form-control required" id="userName" name="userName" type="text">
+                              </div>
+                              <div class="col-md-6">
+                                <label for="creditCard">Tarjeta de credito</label>
+                                <p class="d-inline-block m-0 type"></p>
+                                <input class="form-control" id="creditCard" name="userName" type="creditCard" placeholder="0000 0000 0000 0000">
+                              </div>
+                            </div>
+                            <div class="row form-group">
+                              <div class="col-md-6">
+                                <label for="cleaveDate">Fecha</label>
+                                <input class="form-control" id="cleaveDate" name="cleaveDate" type="text" placeholder="YYYY/MM/DD">
+                              </div>
+                              <div class="col-md-6">
+                                <label for="cleaveSalary">Salario</label>
+                                <input class="form-control" id="cleaveSalary" name="cleaveSalary" type="text">
+                              </div>
+                            </div>
+                            <div class="row form-group">
+                              <div class="col-md-6">
+                                <label for="password">Contraseña *</label>
+                                <input class="form-control required" id="password" name="password" type="password">
+                              </div>
+                              <div class="col-md-6">
+                                <label for="confirm">Confirmar contraseña *</label>
+                                <input class="form-control required" id="confirm" name="confirm" type="password">
+                              </div>
+                            </div>
+                            <div class="row form-group">
+                              <div class="col-md-6">
+                                <label class="w-100" for="password">Categoria</label>
+                                <select class="form-control category">
+                                  <option selected="">Seleccionar</option>
+                                  <option>Puesto 1</option>
+                                  <option>Puesto 2</option>
+                                  <option>Puesto 3</option>
+                                  <option>Puesto 4</option>
+                                  <option>Puesto 5</option>
+                                </select>
+                              </div>
+                              <div class="col-md-6">
+                                <label class="w-100" for="categoryMultiple">Categoria Multiple</label>
+                                <select class="form-control category" id="categoryMultiple" multiple="multiple" name="categories">
+                                  <option>Puesto 1</option>
+                                  <option>Puesto 2</option>
+                                  <option>Puesto 3</option>
+                                  <option>Puesto 4</option>
+                                  <option>Puesto 5</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row form-group">
+                              <div class="col-md-12">
+                                <label for="cleaveAddress">Dirección</label>
+                                <textarea class="form-control" id="cleaveAddress" name="cleaveAddress"></textarea>
+                              </div>
+                            </div>
                           </section>
-                          <h3>Profile</h3>
+                          <h3>Adicionales</h3>
                           <section>
                             <label for="name">First name *</label>
                             <input class="required" id="name" name="name" type="text">
@@ -1125,5 +1178,7 @@
   <script src="plugins/Wizard/jquery.validate.js"></script>
   <script src="plugins/Wizard/jquery.steps.js"></script>
   <script src="plugins/Wizard/form-wizard.js"></script>
+  <script src="plugins/Cleave/cleave.min.js"></script>
+  <script src="plugins/Cleave/cleave-phone.es.js"></script>
   <script src="js/agency.min.js"></script>
 </html>

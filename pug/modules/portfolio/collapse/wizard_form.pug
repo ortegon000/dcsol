@@ -3,16 +3,54 @@
         .body
             form#wizard_form(action='#')
                 div
-                    h3 Account
+                    h3 Cuenta
                     section
-                        label(for='userName') User name *
-                        input.form-control#userName.required(name='userName', type='text')
-                        label(for='password') Password *
-                        input#password.required(name='password', type='text')
-                        label(for='confirm') Confirm Password *
-                        input#confirm.required(name='confirm', type='text')
-                        p (*) Mandatory
-                    h3 Profile
+                        .row.form-group
+                            .col-md-6
+                                label(for='userName') Nombre *
+                                input#userName.form-control.required(name='userName', type='text')
+                            .col-md-6
+                                label(for='creditCard') Tarjeta de credito
+                                p.d-inline-block.m-0.type
+                                input#creditCard.form-control(name='userName', type='creditCard', placeholder='0000 0000 0000 0000')
+                        .row.form-group
+                            .col-md-6
+                                label(for='cleaveDate') Fecha
+                                input#cleaveDate.form-control(name='cleaveDate', type='text', placeholder='YYYY/MM/DD')
+                            .col-md-6
+                                label(for='cleaveSalary') Salario
+                                input#cleaveSalary.form-control(name='cleaveSalary', type='text')
+                        .row.form-group
+                            .col-md-6
+                                label(for='password') Contraseña *
+                                input#password.form-control.required(name='password', type='password')
+                            .col-md-6
+                                label(for='confirm') Confirmar contraseña *
+                                input#confirm.form-control.required(name='confirm', type='password')
+                        .row.form-group
+                            .col-md-6
+                                label.w-100(for='password') Categoria
+                                select.form-control.category
+                                    option(selected='') Seleccionar
+                                    option Puesto 1
+                                    option Puesto 2
+                                    option Puesto 3
+                                    option Puesto 4
+                                    option Puesto 5
+                            .col-md-6
+                                label.w-100(for='categoryMultiple') Categoria Multiple
+                                select#categoryMultiple(multiple='multiple' name='categories').form-control.category
+                                    option Puesto 1
+                                    option Puesto 2
+                                    option Puesto 3
+                                    option Puesto 4
+                                    option Puesto 5
+                        .row.form-group
+                            .col-md-12
+                                label(for='cleaveAddress') Dirección
+                                textarea#cleaveAddress.form-control(name='cleaveAddress')
+
+                    h3 Adicionales
                     section
                         label(for='name') First name *
                         input#name.required(name='name', type='text')
