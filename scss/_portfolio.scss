@@ -1,5 +1,6 @@
 // Styling for the portfolio section
 #portfolio {
+	font-family: Montserrat, sans-serif;
 	position: relative;
 	.portfolio-item {
 		right: 0;
@@ -182,8 +183,5 @@
 				background-color: $gray-900;
 			}
 		}
-	}
-	.modal-backdrop {
-
 	}
 }

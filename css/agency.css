@@ -211,6 +211,7 @@ header.masthead {
   text-transform: none; }
 
 #portfolio {
+  font-family: Montserrat, sans-serif;
   position: relative; }
   #portfolio .portfolio-item {
     right: 0;
