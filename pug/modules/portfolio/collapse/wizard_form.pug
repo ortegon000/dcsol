@@ -1,3 +1,4 @@
+- var values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 #collapseWizardForm.collapse.advanced
     .card.card-body
         .body
@@ -8,7 +9,7 @@
                         .row.form-group
                             .col-md-6
                                 label(for='userName') Nombre *
-                                input#userName.form-control.required(name='userName', type='text')
+                                input#userName.form-control.require(name='userName', type='text')
                             .col-md-6
                                 label(for='creditCard') Tarjeta de credito
                                 p.d-inline-block.m-0.type
@@ -23,28 +24,23 @@
                         .row.form-group
                             .col-md-6
                                 label(for='password') Contraseña *
-                                input#password.form-control.required(name='password', type='password')
+                                input#password.form-control.require(name='password', type='password')
                             .col-md-6
                                 label(for='confirm') Confirmar contraseña *
-                                input#confirm.form-control.required(name='confirm', type='password')
+                                input#confirm.form-control.require(name='confirm', type='password')
                         .row.form-group
                             .col-md-6
                                 label.w-100(for='password') Categoria
                                 select.form-control.category
                                     option(selected='') Seleccionar
-                                    option Puesto 1
-                                    option Puesto 2
-                                    option Puesto 3
-                                    option Puesto 4
-                                    option Puesto 5
+                                    each val in values
+                                        option Puesto #{val}
                             .col-md-6
                                 label.w-100(for='categoryMultiple') Categoria Multiple
                                 select#categoryMultiple(multiple='multiple' name='categories').form-control.category
-                                    option Puesto 1
-                                    option Puesto 2
-                                    option Puesto 3
-                                    option Puesto 4
-                                    option Puesto 5
+                                    each val in values
+                                        option Puesto #{val}
+
                         .row.form-group
                             .col-md-12
                                 label(for='cleaveAddress') Dirección
@@ -52,15 +48,21 @@
 
                     h3 Adicionales
                     section
-                        label(for='name') First name *
-                        input#name.required(name='name', type='text')
-                        label(for='surname') Last name *
-                        input#surname.required(name='surname', type='text')
-                        label(for='email') Email *
-                        input#email.required.email(name='email', type='text')
-                        label(for='address') Address
-                        input#address(name='address', type='text')
-                        p (*) Mandatory
+                        .row.form-group.text-center
+                            .col-md-12
+                                h2.section-heading.text-uppercase.text-primary.pb-3 MULTI-SELECT
+                                select#my-select(multiple='multiple', name='my-select[]')
+                                    each val in values
+                                        option(value="elem_"+val) Producto #{val}
+                        .row.form-group.text-center
+                            .col-md-12
+                                input(type='number')
+                                select#input-select
+                                #html5
+
+
+
+
                     h3 Hints
                     section
                         ul

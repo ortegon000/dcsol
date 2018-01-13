@@ -20,6 +20,10 @@
     <link href="plugins/SweetAlert/sweetalert.css" rel="stylesheet">
     <!-- Wizard-->
     <link href="plugins/Wizard/jquery.steps.css" rel="stylesheet">
+    <!-- MultiSelect-->
+    <link href="plugins/MultiSelect/multi-select.css" rel="stylesheet">
+    <!-- UISlider-->
+    <link href="plugins/UISlider/nouislider.min.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -788,7 +792,7 @@
                             <div class="row form-group">
                               <div class="col-md-6">
                                 <label for="userName">Nombre *</label>
-                                <input class="form-control required" id="userName" name="userName" type="text">
+                                <input class="form-control require" id="userName" name="userName" type="text">
                               </div>
                               <div class="col-md-6">
                                 <label for="creditCard">Tarjeta de credito</label>
@@ -809,11 +813,11 @@
                             <div class="row form-group">
                               <div class="col-md-6">
                                 <label for="password">Contraseña *</label>
-                                <input class="form-control required" id="password" name="password" type="password">
+                                <input class="form-control require" id="password" name="password" type="password">
                               </div>
                               <div class="col-md-6">
                                 <label for="confirm">Confirmar contraseña *</label>
-                                <input class="form-control required" id="confirm" name="confirm" type="password">
+                                <input class="form-control require" id="confirm" name="confirm" type="password">
                               </div>
                             </div>
                             <div class="row form-group">
@@ -826,6 +830,13 @@
                                   <option>Puesto 3</option>
                                   <option>Puesto 4</option>
                                   <option>Puesto 5</option>
+                                  <option>Puesto 6</option>
+                                  <option>Puesto 7</option>
+                                  <option>Puesto 8</option>
+                                  <option>Puesto 9</option>
+                                  <option>Puesto 10</option>
+                                  <option>Puesto 11</option>
+                                  <option>Puesto 12</option>
                                 </select>
                               </div>
                               <div class="col-md-6">
@@ -836,6 +847,13 @@
                                   <option>Puesto 3</option>
                                   <option>Puesto 4</option>
                                   <option>Puesto 5</option>
+                                  <option>Puesto 6</option>
+                                  <option>Puesto 7</option>
+                                  <option>Puesto 8</option>
+                                  <option>Puesto 9</option>
+                                  <option>Puesto 10</option>
+                                  <option>Puesto 11</option>
+                                  <option>Puesto 12</option>
                                 </select>
                               </div>
                             </div>
@@ -848,15 +866,32 @@
                           </section>
                           <h3>Adicionales</h3>
                           <section>
-                            <label for="name">First name *</label>
-                            <input class="required" id="name" name="name" type="text">
-                            <label for="surname">Last name *</label>
-                            <input class="required" id="surname" name="surname" type="text">
-                            <label for="email">Email *</label>
-                            <input class="required email" id="email" name="email" type="text">
-                            <label for="address">Address</label>
-                            <input id="address" name="address" type="text">
-                            <p>(*) Mandatory</p>
+                            <div class="row form-group text-center">
+                              <div class="col-md-12">
+                                <h2 class="section-heading text-uppercase text-primary pb-3">MULTI-SELECT</h2>
+                                <select id="my-select" multiple="multiple" name="my-select[]">
+                                  <option value="elem_1">Producto 1</option>
+                                  <option value="elem_2">Producto 2</option>
+                                  <option value="elem_3">Producto 3</option>
+                                  <option value="elem_4">Producto 4</option>
+                                  <option value="elem_5">Producto 5</option>
+                                  <option value="elem_6">Producto 6</option>
+                                  <option value="elem_7">Producto 7</option>
+                                  <option value="elem_8">Producto 8</option>
+                                  <option value="elem_9">Producto 9</option>
+                                  <option value="elem_10">Producto 10</option>
+                                  <option value="elem_11">Producto 11</option>
+                                  <option value="elem_12">Producto 12</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="row form-group text-center">
+                              <div class="col-md-12">
+                                <input type="number">
+                                <select id="input-select"></select>
+                                <div id="html5"></div>
+                              </div>
+                            </div>
                           </section>
                           <h3>Hints</h3>
                           <section>
@@ -1180,5 +1215,7 @@
   <script src="plugins/Wizard/form-wizard.js"></script>
   <script src="plugins/Cleave/cleave.min.js"></script>
   <script src="plugins/Cleave/cleave-phone.es.js"></script>
+  <script src="plugins/MultiSelect/jquery.multi-select.js"></script>
+  <script src="plugins/UISlider/nouislider.min.js"></script>
   <script src="js/agency.min.js"></script>
 </html>

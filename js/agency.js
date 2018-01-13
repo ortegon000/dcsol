@@ -231,6 +231,33 @@
     $('.category').select2({
         width: '100%'
     });
+
+    // MultiSelect
+    $('#my-select').multiSelect()
+
+    // UISlider
+    var select = document.getElementById('input-select');
+
+// Append the option elements
+    for ( var i = -20; i <= 40; i++ ){
+
+        var option = document.createElement("option");
+        option.text = i;
+        option.value = i;
+
+        select.appendChild(option);
+    }
+    var html5Slider = document.getElementById('html5');
+
+    noUiSlider.create(html5Slider, {
+        start: [ 10, 30 ],
+        connect: true,
+        range: {
+            'min': -20,
+            'max': 40
+        }
+    });
+
 })(jQuery); // End of use strict
 
 

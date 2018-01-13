@@ -286,6 +286,8 @@ header.masthead {
     width: 100%;
     padding: 0;
     margin: 0; }
+  #portfolio #ms-my-select {
+    margin: 0 auto; }
   #portfolio circle {
     fill: white;
     position: relative;
@@ -356,6 +358,38 @@ header.masthead {
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
         background-color: #212529; }
+
+#red, #green, #blue {
+  margin: 10px;
+  display: inline-block;
+  height: 200px; }
+
+#colorpicker {
+  height: 240px;
+  width: 310px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #BFBFBF; }
+
+#result {
+  margin: 60px 26px;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+  color: #7f7f7f;
+  background: #7f7f7f;
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px; }
+
+#red .noUi-connect {
+  background: #c0392b; }
+
+#green .noUi-connect {
+  background: #27ae60; }
+
+#blue .noUi-connect {
+  background: #2980b9; }
 
 .timeline {
   position: relative;
