@@ -1,0 +1,18 @@
+mixin targetToCollapse(href, collapseName, imageName, collapseDescription)
+    .col-md-4.col-sm-12.portfolio-item
+        a.portfolio-link(
+        data-toggle='collapse',
+        data-parent='#tablesGroup',
+        data-target=href,
+        href=href,
+        role='button',
+        aria-expanded='false',
+        aria-controls='collapseExample')
+            .portfolio-hover
+                .portfolio-hover-content
+                    i.fa.fa-search.fa-3x
+            //img.img-fluid.w-100(src=imgPath + imageName, alt=name)
+            img.img-fluid.w-100.h-100(src='/img/portfolio/' + imageName, alt=name)
+        .portfolio-caption
+            h4.text-primary #{collapseName}
+            p.text-muted #{collapseDescription}

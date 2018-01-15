@@ -124,6 +124,18 @@
         group.find('.collapse.show').collapse('hide');
     });
 
+    $('.portfolio-link').on('click', function(){
+        var itemCollapsed = $(this).attr('data-target');
+
+        $(itemCollapsed).on('shown.bs.collapse', function (e) {
+            var heigth = $(itemCollapsed).height();
+            $('html,body').animate({
+                scrollTop: $('.card-body').offset().top + heigth / 2
+            }, 500);
+        });
+
+    });
+
     // Select2
     $('.advanced .select2').select2({ width: '100%' });
 

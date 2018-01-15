@@ -1,70 +1,17 @@
+include ../../../mixins/targetToCollapse
 - var imgPath = 'https://raw.githubusercontent.com/rodr7go/dcsol/master/img/portfolio/'
 
 #ejemplos.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='profile-tab')
     .row
-        .col-md-4.col-sm-6.portfolio-item
-            a.portfolio-link(data-toggle='collapse', data-parent='#tablesGroup', href='#collapseBasicTable' role='button', aria-expanded='false', aria-controls='collapseExample')
-                .portfolio-hover
-                    .portfolio-hover-content
-                        i.fa.fa-search.fa-3x
-                img.img-fluid.w-100(src=imgPath+'basic_table.png', alt='Tabla basica')
-            .portfolio-caption
-                h4.text-primary Tabla básica
-                p.text-muted Tabla con configuración básica
 
-        .col-md-4.col-sm-6.portfolio-item
-            a.portfolio-link(data-toggle='collapse', data-parent='#tablesGroup', href='#collapseFilterTable' role='button', aria-expanded='false', aria-controls='collapseExample')
-                .portfolio-hover
-                    .portfolio-hover-content
-                        i.fa.fa-search.fa-3x
-                img.img-fluid.w-100(src=imgPath+'filter_table.png', alt='Tabla con filtros')
-            .portfolio-caption
-                h4.text-primary Tabla con filtros
-                p.text-muted Busqueda por medio de filtros
-
-        .col-md-4.col-sm-6.portfolio-item
-            a.portfolio-link(data-toggle='collapse', data-parent='#tablesGroup', href='#collapseButtonsTable' role='button', aria-expanded='false', aria-controls='collapseExample')
-                .portfolio-hover
-                    .portfolio-hover-content
-                        i.fa.fa-search.fa-3x
-                img.img-fluid.w-100(src=imgPath+'buttons_table.png', alt='Tabla avanzada')
-            .portfolio-caption
-                h4.text-primary Tabla avanzada
-                p.text-muted Copy, PDF, Excel
+        +targetToCollapse('#collapseBasicTable', 'Tabla básica', 'basic_table.png', 'Tabla con configuración básica')
+        +targetToCollapse('#collapseFilterTable', 'Tabla con filtros', 'filter_table.png', 'Busqueda por medio de filtros')
+        +targetToCollapse('#collapseButtonsTable', 'Tabla avanzada', 'buttons_table.png', 'Copiar, PDF, Excel')
 
     .row
-        .col-md-4.col-sm-6.portfolio-item
-            a.portfolio-link(data-toggle='collapse', data-parent='#tablesGroup', href='#collapseBasicForm' role='button', aria-expanded='false', aria-controls='collapseExample')
-                .portfolio-hover
-                    .portfolio-hover-content
-                        i.fa.fa-search.fa-3x
-                img.img-fluid.w-100(src=imgPath + 'basic_form.png', alt='Tabla avanzada')
-                //img.img-fluid.w-100(src='/img/portfolio/basic_form.png', alt='Formulario bàsico')
-            .portfolio-caption
-                h4.text-primary Formulario básico
-                p.text-muted Configuración basica
-
-        .col-md-4.col-sm-6.portfolio-item
-            a.portfolio-link(data-toggle='collapse', data-parent='#tablesGroup', href='#collapseAdvancedForm' role='button', aria-expanded='false', aria-controls='collapseExample')
-                .portfolio-hover
-                    .portfolio-hover-content
-                        i.fa.fa-search.fa-3x
-                img.img-fluid.w-100(src=imgPath + 'advanced_form.png', alt='Tabla avanzada')
-                //img.img-fluid.w-100(src='/img/portfolio/advanced_form.png', alt='Formulario avanzado')
-            .portfolio-caption
-                h4.text-primary Uso de plugins
-                p.text-muted Formulario con plugins
-
-        .col-md-4.col-sm-6.portfolio-item
-            a.portfolio-link(data-toggle='collapse', data-parent='#tablesGroup', href='#collapseWizardForm' role='button', aria-expanded='false', aria-controls='collapseExample' style='height: 150px')
-                .portfolio-hover
-                    .portfolio-hover-content
-                        i.fa.fa-search.fa-3x
-                img.img-fluid.w-100(src=imgPath + 'wizard_form.png', alt='Tabla avanzada')
-                //img.img-fluid.w-100.h-100(src='/img/portfolio/wizard_form.png', alt='Formulario avanzado')
-            .portfolio-caption
-                h4.text-primary Paso a paso
-                p.text-muted Formulario con ayuda
+        +targetToCollapse('#collapseBasicForm', 'Formulario básico', 'basic_form.png', 'Configuración basica')
+        +targetToCollapse('#collapseAdvancedForm', 'Uso de plugins', 'advanced_form.png', 'Formulario con plugins')
+        +targetToCollapse('#collapseWizardForm', 'Paso a paso', 'wizard_form.png', 'Formulario con ayuda')
 
 include ../collapse/basic_table
 include ../collapse/filter_table
