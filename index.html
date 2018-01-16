@@ -721,23 +721,27 @@
                         <thead>
                           <tr>
                             <th></th>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Extn.</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Puesto</th>
+                            <th>Email</th>
+                            <th>Oficina</th>
+                            <th>Edad</th>
+                            <th>Fecha de inicio</th>
                           </tr>
                         </thead>
                         <tfoot>
                           <tr>
                             <th></th>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Extn.</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Puesto</th>
+                            <th>Email</th>
+                            <th>Oficina</th>
+                            <th>Edad</th>
+                            <th>Fecha de inicio</th>
                           </tr>
                         </tfoot>
                       </table>
@@ -750,12 +754,12 @@
                       <form>
                         <div class="row form-group">
                           <div class="col-md-4">
-                            <label class="col-form-label" for="name">Nombre</label>
-                            <input class="name form-control" id="name" type="text" required="required">
+                            <label class="col-form-label">Nombre</label>
+                            <input class="name form-control" type="text" name="name" required="required">
                           </div>
                           <div class="col-md-4">
-                            <label class="col-form-label w-100" for="jobPosition">Puesto</label>
-                            <select class="jobPosition form-control select2 w-100" id="jobPosition">
+                            <label class="col-form-label w-100">Puesto</label>
+                            <select class="jobPosition form-control select2 w-100">
                               <option selected="">Seleccionar</option>
                               <option>Puesto 1</option>
                               <option>Puesto 2</option>
@@ -765,22 +769,22 @@
                             </select>
                           </div>
                           <div class="col-md-4">
-                            <label class="col-form-label" for="office">Oficina</label>
-                            <input class="office form-control" id="office" type="text">
+                            <label class="col-form-label">Oficina</label>
+                            <input class="office form-control" type="text">
                           </div>
                         </div>
                         <div class="row form-group">
                           <div class="col-md-4">
-                            <label class="col-form-label" for="age">Edad</label>
-                            <input class="age form-control" id="age" type="text" pattern="[0-9]">
+                            <label class="col-form-label">Edad</label>
+                            <input class="age form-control" type="text" pattern="[0-9]">
                           </div>
                           <div class="col-md-4">
-                            <label class="col-form-label" for="startDate">Fecha de inicio</label>
-                            <input class="startDate form-control datepicker" id="startDate" type="text">
+                            <label class="col-form-label">Fecha de inicio</label>
+                            <input class="startDate form-control datepicker" type="text">
                           </div>
                           <div class="col-md-4">
-                            <label class="col-form-label" for="salary">Salario</label>
-                            <input class="salary form-control" id="salary" type="text">
+                            <label class="col-form-label">Salario</label>
+                            <input class="salary form-control" type="text">
                           </div>
                         </div>
                         <button class="btn btn-success btn_save_dummy_record">Guardar</button>
@@ -794,12 +798,12 @@
                       <form>
                         <div class="row form-group">
                           <div class="col-md-4">
-                            <label class="col-form-label" for="name">Nombre</label>
-                            <input class="name form-control" id="name" type="text" required="required">
+                            <label class="col-form-label">Nombre</label>
+                            <input class="name form-control" type="text" name="name" required="required">
                           </div>
                           <div class="col-md-4">
-                            <label class="col-form-label w-100" for="jobPosition">Puesto</label>
-                            <select class="jobPosition form-control select2 w-100" id="jobPosition">
+                            <label class="col-form-label w-100">Puesto</label>
+                            <select class="jobPosition form-control select2 w-100">
                               <option selected="">Seleccionar</option>
                               <option>Puesto 1</option>
                               <option>Puesto 2</option>
@@ -809,22 +813,22 @@
                             </select>
                           </div>
                           <div class="col-md-4">
-                            <label class="col-form-label" for="office">Oficina</label>
-                            <input class="office form-control" id="office" type="text">
+                            <label class="col-form-label">Oficina</label>
+                            <input class="office form-control" type="text">
                           </div>
                         </div>
                         <div class="row form-group">
                           <div class="col-md-4">
-                            <label class="col-form-label" for="age">Edad</label>
-                            <input class="age form-control" id="age" type="text" pattern="[0-9]">
+                            <label class="col-form-label">Edad</label>
+                            <input class="age form-control" type="text" pattern="[0-9]">
                           </div>
                           <div class="col-md-4">
-                            <label class="col-form-label" for="startDate">Fecha de inicio</label>
-                            <input class="startDate form-control datepicker" id="startDate" type="text">
+                            <label class="col-form-label">Fecha de inicio</label>
+                            <input class="startDate form-control datepicker" type="text">
                           </div>
                           <div class="col-md-4">
-                            <label class="col-form-label" for="salary">Salario</label>
-                            <input class="salary form-control" id="salary" type="text">
+                            <label class="col-form-label">Salario</label>
+                            <input class="salary form-control" type="text">
                           </div>
                         </div>
                         <button class="btn btn-success btn_save_dummy_record">Guardar</button>
@@ -1277,6 +1281,7 @@
   <script src="plugins/Datatables/vfs_fonts.js"></script>
   <script src="https://cdn.datatables.net/select/1.2.4/js/dataTables.select.min.js"></script>
   <script src="plugins/Datatables/dataTables.editor.min.js"></script>
+  <script src="js/dataToPopulateTable.js"></script>
   <script src="plugins/Select2/select2.min.js"></script>
   <script src="plugins/DatePicker/datepicker.min.js"></script>
   <script src="plugins/SweetAlert/sweetalert.min.js"></script>
