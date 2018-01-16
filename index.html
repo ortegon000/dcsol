@@ -14,8 +14,10 @@
     <!-- DatePicker-->
     <link href="plugins/DatePicker/datepicker.min.css" rel="stylesheet">
     <!-- Datatables-->
-    <link href="plugins/Datatables/datatables.min.css">
-    <link href="plugins/Datatables/buttons.dataTables.min.css">
+    <link href="plugins/Datatables/datatables.min.css" rel="stylesheet">
+    <link href="plugins/Datatables/buttons.dataTables.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/select/1.2.4/css/select.dataTables.min.css" rel="stylesheet">
+    <link href="plugins/Datatables/editor.dataTables.min.css" rel="stylesheet">
     <!-- SweetAlert-->
     <link href="plugins/SweetAlert/sweetalert.css" rel="stylesheet">
     <!-- Wizard-->
@@ -24,6 +26,8 @@
     <link href="plugins/MultiSelect/multi-select.css" rel="stylesheet">
     <!-- UISlider-->
     <link href="plugins/UISlider/nouislider.min.css" rel="stylesheet">
+    <!--DropZone-->
+    <link href="plugins/DropZone/dropzone.css" rel="stylesheet">
     <!-- Custom fonts for this template-->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -245,6 +249,16 @@
                                     </div>
                   </div>
                   <div class="row">
+                                    <div class="col-md-4 col-sm-12 portfolio-item"><a class="portfolio-link" data-toggle="collapse" data-parent="#tablesGroup" data-target="#collapseEditableTable" href="#collapseEditableTable" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <div class="portfolio-hover">
+                                          <div class="portfolio-hover-content"><i class="fa fa-search fa-3x"></i></div>
+                                        </div><img class="img-fluid w-100" src="https://raw.githubusercontent.com/rodr7go/dcsol/master/img/portfolio/basic_form.png">
+                                        <!--img.img-fluid.w-100.h-100(src='/img/portfolio/' + imageName, alt=name)--></a>
+                                      <div class="portfolio-caption">
+                                        <h4 class="text-primary">Tabla editable</h4>
+                                        <p class="text-muted">Edicion en linea</p>
+                                      </div>
+                                    </div>
                                     <div class="col-md-4 col-sm-12 portfolio-item"><a class="portfolio-link" data-toggle="collapse" data-parent="#tablesGroup" data-target="#collapseBasicForm" href="#collapseBasicForm" role="button" aria-expanded="false" aria-controls="collapseExample">
                                         <div class="portfolio-hover">
                                           <div class="portfolio-hover-content"><i class="fa fa-search fa-3x"></i></div>
@@ -265,6 +279,8 @@
                                         <p class="text-muted">Formulario con plugins</p>
                                       </div>
                                     </div>
+                  </div>
+                  <div class="row">
                                     <div class="col-md-4 col-sm-12 portfolio-item"><a class="portfolio-link" data-toggle="collapse" data-parent="#tablesGroup" data-target="#collapseWizardForm" href="#collapseWizardForm" role="button" aria-expanded="false" aria-controls="collapseExample">
                                         <div class="portfolio-hover">
                                           <div class="portfolio-hover-content"><i class="fa fa-search fa-3x"></i></div>
@@ -277,6 +293,7 @@
                                     </div>
                   </div>
                 </div>
+                <div id="itemToScroll"></div>
                 <div class="collapse" id="collapseBasicTable">
                   <div class="card card-body">
                     <div class="body table-responsive">
@@ -697,6 +714,36 @@
                     </div>
                   </div>
                 </div>
+                <div class="collapse advanced" id="collapseEditableTable">
+                  <div class="card card-body">
+                    <div class="body">
+                      <table class="display table table-striped table-hover" id="example" cellspacing="0" width="100%">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Extn.</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                          </tr>
+                        </thead>
+                        <tfoot>
+                          <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Extn.</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+                </div>
                 <div class="collapse" id="collapseBasicForm">
                   <div class="card card-body">
                     <div class="body">
@@ -824,7 +871,7 @@
                               </div>
                             </div>
                             <div class="row form-group">
-                              <div class="col-md-6">
+                              <div class="col-sm-12 col-md-6">
                                 <label class="w-100" for="password">Categoria</label>
                                 <select class="form-control category">
                                   <option selected="">Seleccionar</option>
@@ -842,7 +889,7 @@
                                   <option>Puesto 12</option>
                                 </select>
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-sm-12 col-md-6">
                                 <label class="w-100" for="categoryMultiple">Categoria Multiple</label>
                                 <select class="form-control category" id="categoryMultiple" multiple="multiple" name="categories">
                                   <option>Puesto 1</option>
@@ -861,7 +908,7 @@
                               </div>
                             </div>
                             <div class="row form-group">
-                              <div class="col-md-12">
+                              <div class="col-sm-12 col-md-12">
                                 <label for="cleaveAddress">Dirección</label>
                                 <textarea class="form-control" id="cleaveAddress" name="cleaveAddress"></textarea>
                               </div>
@@ -888,26 +935,44 @@
                                 </select>
                               </div>
                             </div>
-                            <div class="row form-group text-center">
+                            <div class="row clearfix text-center">
                               <div class="col-md-12">
-                                <input type="number">
-                                <select id="input-select"></select>
-                                <div id="html5"></div>
+                                <h2 class="section-heading text-uppercase text-primary p-3">INPUT RANGE</h2>
+                              </div>
+                              <div class="col-md-6">
+                                <p><b>Básico</b></p>
+                                <div id="nouislider_basic_example"></div>
+                                <div class="m-t-20 font-12"><b>Value:</b><span class="js-nouislider-value"></span></div>
+                              </div>
+                              <div class="col-md-6">
+                                <p><b>Rango</b></p>
+                                <div id="nouislider_range_example"></div>
+                                <div class="m-t-20 font-12"><b>Value:</b><span class="js-nouislider-value"></span></div>
                               </div>
                             </div>
                           </section>
-                          <h3>Hints</h3>
+                          <h3>Manejo de archivos</h3>
                           <section>
-                            <ul>
-                              <li>Foo</li>
-                              <li>Bar</li>
-                              <li>Foobar</li>
-                            </ul>
-                          </section>
-                          <h3>Finish</h3>
-                          <section>
-                            <input class="required" id="acceptTerms" name="acceptTerms" type="checkbox">
-                            <label for="acceptTerms">I agree with the Terms and Conditions.</label>
+                            <div class="row form-group text-center">
+                              <div class="col-md-12 text-center">
+                                <h2 class="section-heading text-uppercase text-primary pb-3">CARGA DE ARCHIVOS</h2>
+                                <input type="file" style="margin: 0 auto;"><br>
+                              </div>
+                            </div>
+                            <div class="row form-group text-center">
+                              <div class="col-md-12">
+                                <h2 class="section-heading text-uppercase text-primary pb-3">CON DROPZONE</h2>
+                                <div class="dropzone" id="myAwesomeDropzone" action="/" method="post" enctype="multipart/form-data">
+                                  <div class="dz-message">
+                                    <div class="drag-icon-cph"><i class="fa fa-hand-o-up fa-4x text-primary"></i></div>
+                                    <h3>Suelta los archivos aquí o haz clic para cargarlos.</h3>
+                                  </div>
+                                  <div class="fallback">
+                                    <input name="file" type="file" multiple="">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </section>
                         </div>
                       </form>
@@ -1210,6 +1275,8 @@
   <script src="plugins/Datatables/buttons.html5.min.js"></script>
   <script src="plugins/Datatables/pdfmake.min.js"></script>
   <script src="plugins/Datatables/vfs_fonts.js"></script>
+  <script src="https://cdn.datatables.net/select/1.2.4/js/dataTables.select.min.js"></script>
+  <script src="plugins/Datatables/dataTables.editor.min.js"></script>
   <script src="plugins/Select2/select2.min.js"></script>
   <script src="plugins/DatePicker/datepicker.min.js"></script>
   <script src="plugins/SweetAlert/sweetalert.min.js"></script>
@@ -1220,5 +1287,6 @@
   <script src="plugins/Cleave/cleave-phone.es.js"></script>
   <script src="plugins/MultiSelect/jquery.multi-select.js"></script>
   <script src="plugins/UISlider/nouislider.min.js"></script>
+  <script src="plugins/DropZone/dropzone.js"></script>
   <script src="js/agency.min.js"></script>
 </html>

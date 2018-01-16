@@ -29,20 +29,20 @@
                                 label(for='confirm') Confirmar contraseña *
                                 input#confirm.form-control.require(name='confirm', type='password')
                         .row.form-group
-                            .col-md-6
+                            .col-sm-12.col-md-6
                                 label.w-100(for='password') Categoria
                                 select.form-control.category
                                     option(selected='') Seleccionar
                                     each val in values
                                         option Puesto #{val}
-                            .col-md-6
+                            .col-sm-12.col-md-6
                                 label.w-100(for='categoryMultiple') Categoria Multiple
                                 select#categoryMultiple(multiple='multiple' name='categories').form-control.category
                                     each val in values
                                         option Puesto #{val}
 
                         .row.form-group
-                            .col-md-12
+                            .col-sm-12.col-md-12
                                 label(for='cleaveAddress') Dirección
                                 textarea#cleaveAddress.form-control(name='cleaveAddress')
 
@@ -54,22 +54,39 @@
                                 select#my-select(multiple='multiple', name='my-select[]')
                                     each val in values
                                         option(value="elem_"+val) Producto #{val}
+                        .row.clearfix.text-center
+                            .col-md-12
+                                h2.section-heading.text-uppercase.text-primary.p-3 INPUT RANGE
+                            .col-md-6
+                                p
+                                    b Básico
+                                #nouislider_basic_example
+                                .m-t-20.font-12
+                                    b Value:
+                                    span.js-nouislider-value
+                            .col-md-6
+                                p
+                                    b Rango
+                                #nouislider_range_example
+                                .m-t-20.font-12
+                                    b Value:
+                                    span.js-nouislider-value
+
+                    h3 Manejo de archivos
+                    section
+                        .row.form-group.text-center
+                            .col-md-12.text-center
+                                h2.section-heading.text-uppercase.text-primary.pb-3 CARGA DE ARCHIVOS
+                                input(type='file', style='margin: 0 auto')
+
+                                br
                         .row.form-group.text-center
                             .col-md-12
-                                input(type='number')
-                                select#input-select
-                                #html5
-
-
-
-
-                    h3 Hints
-                    section
-                        ul
-                            li Foo
-                            li Bar
-                            li Foobar
-                    h3 Finish
-                    section
-                        input#acceptTerms.required(name='acceptTerms', type='checkbox')
-                        label(for='acceptTerms') I agree with the Terms and Conditions.
+                                h2.section-heading.text-uppercase.text-primary.pb-3 CON DROPZONE
+                                div#myAwesomeDropzone.dropzone(action='/', method='post', enctype='multipart/form-data')
+                                        .dz-message
+                                            .drag-icon-cph
+                                                i.fa.fa-hand-o-up.fa-4x.text-primary
+                                            h3 Suelta los archivos aquí o haz clic para cargarlos.
+                                        .fallback
+                                            input(name='file', type='file', multiple='')
