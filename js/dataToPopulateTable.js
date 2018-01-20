@@ -1,4 +1,4 @@
-var  data = [
+var  dataToPopulate = [
     {
         "id": "1",
         "first_name": "Tiger",

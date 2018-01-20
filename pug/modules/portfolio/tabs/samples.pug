@@ -1,3 +1,9 @@
+include ../../../mixins/galleryItem
 #muestra.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
-    .col-md-4.col-sm-6.portfolio-item
-        h1.text-white Agregar screenshots de App
+    #animated-thumbnails.row.clearfix
+        +galleryItem('intro-app-almacen.png', 'Intro de app')
+        +galleryItem('login-app-almacen.png', 'Login de app')
+        +galleryItem('menu-app.png', 'Menú de app')
+        +galleryItem('transfer.png', 'Transferencias')
+        +galleryItem('inventory.png', 'Inventario')
+        +galleryItem('employees.png', 'Empleados')

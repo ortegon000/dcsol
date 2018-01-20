@@ -133,7 +133,15 @@
             },
             {
                 label: "Position:",
-                name: "position"
+                name: "position",
+                type: "select",
+                options: [
+                    { label: "1 (highest)", value: "1" },
+                    { label: "2",           value: "2" },
+                    { label: "3",           value: "3" },
+                    { label: "4",           value: "4" },
+                    { label: "5 (lowest)",  value: "5" }
+                ]
             },
             {
                 label: "Email",
@@ -168,9 +176,11 @@
         editor.inline( this );
     } );
 
+
+
     $('#example').DataTable( {
         dom: "Bfrtip",
-        data: data,
+        data: dataToPopulate,
         // ajax: "../php/staff.php",
         order: [[ 1, 'asc' ]],
         columns: [
@@ -180,13 +190,6 @@
                 className: 'select-checkbox',
                 orderable: false
             },
-            // { data: "first_name" },
-            // { data: "last_name" },
-            // { data: "position" },
-            // { data: "office" },
-            // { data: "start_date" },
-            // { data: "salary", render: $.fn.dataTable.render.number( ',', '.', 0, '$' ) }
-
             {data: "id"},
             {data: "first_name"},
             {data: "last_name"},
@@ -194,7 +197,7 @@
             {data: "email"},
             {data: "office"},
             //{data: "extn"},
-            {data: "age"},
+            {data: 'age'},
             //{data: "salary", render: $.fn.dataTable.render.number( ',', '.', 0, '$' )},
             {data: "start_date"},
 
@@ -403,6 +406,12 @@
         });
     }
 
+    $('#animated-thumbnails').lightGallery({
+        thumbnail:true,
+        animateThumb: false,
+        showThumbByDefault: false,
+        selector: '.item'
+    });
 })(jQuery); // End of use strict
 
 
