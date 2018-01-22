@@ -21,7 +21,7 @@ var banner = ['/*!\n',
 gulp.task('pug', function (){
   return gulp.src('pug/index.pug')
     .pipe(pug({
-      pretty: true
+      pretty: false // false = minify
     }))
     .pipe(gulp.dest('./'))
     .pipe(browserSync.reload({
