@@ -297,6 +297,12 @@ header.masthead {
     stroke-width: 1;
     position: relative;
     z-index: 0; }
+  #portfolio .gallery-item-portfolio {
+    height: 380px;
+    overflow: hidden;
+    margin-bottom: 35px; }
+    #portfolio .gallery-item-portfolio .item-gallery-image {
+      height: auto; }
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
