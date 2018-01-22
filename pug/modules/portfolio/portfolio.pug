@@ -3,17 +3,17 @@ section#portfolio
     .container
         .row
             .col-lg-12.text-center
-                h2.section-heading.text-uppercase.text-primary.pb-3 Portfolio
+                h2.section-heading.text-uppercase.text-white.pb-3 Portfolio
                 //h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
         .row
             .col-md-12
                 ul#myTab.nav.nav-tabs(role='tablist')
                     li.nav-item
-                        a#examples-tab.nav-link.active(data-toggle='tab', href='#ejemplos', role='tab', aria-controls='home', aria-selected='true') Ejemplos en linea
+                        a#examples-tab.nav-link.active(data-toggle='tab', href='#ejemplos', role='tab', aria-controls='home', aria-selected='true') Ejemplos
                     li.nav-item
-                        a#samples-tab.nav-link(data-toggle='tab', href='#muestra', role='tab', aria-controls='profile', aria-selected='false') Muestra
+                        a#samples-tab.nav-link(data-toggle='tab', href='#muestra', role='tab', aria-controls='profile', aria-selected='false') Muestra app movil
 
-                .card.bg-transparent
+                .card.bg-transparent.border-customized
                     .card-body
                         .tab-content#tablesGroup
                             include tabs/examples

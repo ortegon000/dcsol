@@ -406,11 +406,78 @@
         });
     }
 
+    // Light Gallery
     $('#animated-thumbnails').lightGallery({
         thumbnail:true,
         animateThumb: false,
         showThumbByDefault: false,
         selector: '.item'
+    });
+
+    // Chart JS Bars
+    var chart = document.getElementById("barChart");
+    var ctx = chart.getContext('2d');
+
+    var barChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+            datasets: [{
+                label: '# of Votes',
+                data: [7, 9, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.5)',
+                    'rgba(54, 162, 235, 0.5)',
+                    'rgba(255, 206, 86, 0.5)',
+                    'rgba(75, 192, 192, 0.5)',
+                    'rgba(153, 102, 255, 0.5)',
+                    'rgba(255, 159, 64, 0.5)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            },
+        }
+    });
+
+    //Lineal Chart
+    var chart = document.getElementById("myLineChart");
+    var ctx = chart.getContext('2d');
+
+    var myLineChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio"],
+            datasets: [{
+                label: '# de votos',
+                data: [7, 9, 3, 5, 2, 3],
+                borderWidth: 3,
+                borderColor: '#FF6384',
+                backgroundColor: 'transparent'
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    stacked: true
+                }]
+            }
+        }
     });
 })(jQuery); // End of use strict
 

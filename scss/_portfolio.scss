@@ -83,8 +83,9 @@
 		position: absolute;
 		top: 0;
 		z-index: 0;
-		background-image: radial-gradient(circle,rgb(0, 34, 35),black);
-		box-shadow: inset 5000px 5000px rgba(#333333, .2);
+		background: #F7971E;
+		background: -webkit-linear-gradient(to right, #d8b200, #F7971E);
+		background: linear-gradient(to right, #d8b200, #F7971E);
 	}
 
 	#svg {
@@ -97,6 +98,19 @@
 
 	#ms-my-select {
 		margin: 0 auto;
+	}
+
+	#samples-tab,
+	#examples-tab {
+		color: white;
+
+		&:focus {
+			color: #333333;
+		}
+	}
+
+	.border-customized {
+		border: 5px solid white;
 	}
 
 	circle {
