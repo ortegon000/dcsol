@@ -291,10 +291,7 @@ header.masthead {
     margin: 0 auto; }
   #portfolio #samples-tab,
   #portfolio #examples-tab {
-    color: white; }
-    #portfolio #samples-tab:focus,
-    #portfolio #examples-tab:focus {
-      color: #333333; }
+    color: black; }
   #portfolio .border-customized {
     border: 5px solid white; }
   #portfolio circle {
