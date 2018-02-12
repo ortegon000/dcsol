@@ -31,12 +31,12 @@
 		background-color: $gray-900;
 		.nav-item {
 			.nav-link {
-				font-size: 90%;
-				font-weight: 600;
+				font-size: 80%;
+				//font-weight: 600;
 				padding: 0.75em 5px;
-				letter-spacing: 1px;
+				letter-spacing: 1.5px;
 				color: white;
-				@include heading-font;
+				font-family: 'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif;;
 				&.active,
 				&:hover {
 					color: $primary;

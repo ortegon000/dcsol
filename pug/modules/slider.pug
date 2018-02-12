@@ -1,5 +1,5 @@
-- var imgPath = 'https://raw.githubusercontent.com/ortegon000/dcsol/master/img/slider/'
-//- var imgPath = "/img/slider/"
+// - var imgPath = 'https://raw.githubusercontent.com/ortegon000/dcsol/master/img/slider/'
+- var imgPath = "/img/slider/"
 #Slider.carousel.slide(data-ride='carousel' data-interval='200000')
 	ol.carousel-indicators
 		li.active(data-target='#Slider', data-slide-to='0')
@@ -7,7 +7,8 @@
 		li(data-target='#Slider', data-slide-to='2')
 
 	.carousel-inner(role='listbox').d-flex.align-items-center.justify-content-cente
-		.carousel-item.active(data-bg=imgPath+"automatizacion.png" data-bg-pos="top center")
+		//.carousel-item.active(data-bg=imgPath+"internet.jpg" data-bg-pos="top center")
+		.carousel-item.active(data-bg=imgPath+"business.jpg" data-bg-pos="top center")
 			.carousel-caption.d-flex.justify-content-center.align-items-center
 				.container
 					.intro-text
@@ -19,7 +20,11 @@
 			.carousel-caption.d-flex.justify-content-center.align-items-center
 				.container
 					.intro-text
-						.intro-lead-in Desarrollo de aplicaciones.
+						.intro-lead-in Desarrollo
+							br
+							|de
+							br
+							|aplicaciones.
 						//h2.intro-description
 						ul.list-platforms.list-unstyled.d-flex.justify-content-around.align-items-center
 							li.list-item
@@ -36,7 +41,7 @@
 								|Web
 						.intro-heading.text-uppercase
 		
-		.carousel-item(data-bg=imgPath+"1.jpg" data-bg-pos="top right")
+		.carousel-item(data-bg=imgPath+"hdd.jpg" data-bg-pos="top right")
 			
 			.carousel-caption.d-flex.justify-content-center.align-items-center
 				.container

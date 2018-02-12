@@ -1,4 +1,9 @@
 // Global styling for this template
+
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Anton|Josefin+Sans|Passion+One|Quicksand');
+
+
 body {
   overflow-x: hidden;
   @include body-font;
@@ -26,7 +31,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  @include heading-font;
+  @include quick-sand;
 }
 
 section {
@@ -99,4 +104,15 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: $primary;
+}
+
+.quickSand-title {
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-family: 'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif;
+    opacity: .7;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 40px;
 }

@@ -3,6 +3,8 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Anton|Josefin+Sans|Passion+One|Quicksand");
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -25,7 +27,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Quicksand', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 section {
   padding: 100px 0; }
@@ -80,6 +82,16 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #1170b7; }
 
+.quickSand-title {
+  font-size: 30px;
+  margin-bottom: 25px;
+  font-family: 'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif;
+  opacity: .7;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  line-height: 40px; }
+
 #mainNav {
   background-color: transparent;
   padding: .5em 0; }
@@ -103,12 +115,11 @@ body {
   #mainNav .navbar-nav {
     background-color: #212529; }
     #mainNav .navbar-nav .nav-item .nav-link {
-      font-size: 90%;
-      font-weight: 600;
+      font-size: 80%;
       padding: 0.75em 5px;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
       color: white;
-      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      font-family: 'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif; }
       #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
         color: #1170b7; }
   #mainNav.navbar-shrink {
@@ -212,7 +223,8 @@ header.masthead {
 
 #portfolio {
   font-family: Montserrat, sans-serif;
-  position: relative; }
+  position: relative;
+  border-top: 1px solid rgba(255, 0, 0, 0.4); }
   #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px; }
@@ -277,10 +289,7 @@ header.masthead {
     margin: 0;
     position: absolute;
     top: 0;
-    z-index: 0;
-    background: #F7971E;
-    background: -webkit-linear-gradient(to right, #d8b200, #F7971E);
-    background: linear-gradient(to right, #d8b200, #F7971E); }
+    z-index: 0; }
   #portfolio #svg {
     box-sizing: border-box;
     height: 100%;
@@ -291,9 +300,17 @@ header.masthead {
     margin: 0 auto; }
   #portfolio #samples-tab,
   #portfolio #examples-tab {
-    color: black; }
+    color: black;
+    font-family: 'Quicksand' !important; }
   #portfolio .border-customized {
     border: 5px solid white; }
+  #portfolio .examples-cards {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 2px; }
+  #portfolio .portfolio-caption p {
+    font-family: 'Quicksand' !important;
+    color: red; }
   #portfolio circle {
     fill: white;
     position: relative;
@@ -562,6 +579,11 @@ header.masthead {
   animation-duration: 1.5s;
   animation-fill-mode: both; }
 
+.quickSand-description {
+  font-size: 1em;
+  font-family: 'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: 500; }
+
 .team-member {
   margin-bottom: 50px;
   text-align: center; }
@@ -577,17 +599,15 @@ header.masthead {
     margin-top: 0; }
 
 section#contact {
-  background-color: #212529;
-  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/footer_lodyas.png");
-  background-repeat: no-repeat;
-  background-size: cover; }
-  section#contact .section-heading {
-    color: #fff; }
+  border-top: 1px solid rgba(255, 0, 0, 0.4); }
   section#contact .form-group {
     margin-bottom: 25px; }
     section#contact .form-group input,
     section#contact .form-group textarea {
-      padding: 20px; }
+      padding: 20px;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+      border-radius: 0; }
     section#contact .form-group input.form-control {
       height: auto; }
     section#contact .form-group textarea.form-control {
@@ -597,22 +617,22 @@ section#contact {
     box-shadow: none; }
   section#contact ::-webkit-input-placeholder {
     font-weight: 700;
-    color: #ced4da;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    color: #868e96;
+    font-family: 'Quicksand', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   section#contact :-moz-placeholder {
     font-weight: 700;
     color: #ced4da;
     /* Firefox 18- */
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Quicksand', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   section#contact ::-moz-placeholder {
     font-weight: 700;
     color: #ced4da;
     /* Firefox 19+ */
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Quicksand', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   section#contact :-ms-input-placeholder {
     font-weight: 700;
     color: #ced4da;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    font-family: 'Quicksand', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 #Clients {
   background: #dddddd; }
@@ -655,7 +675,7 @@ ul.social-buttons {
 
 #Slider {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background: black; }
   #Slider .carousel-inner {
     height: 100%; }
@@ -672,12 +692,7 @@ ul.social-buttons {
         bottom: 0;
         left: 0;
         right: 0;
-        background: #FF512F;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #FF512F, #DD2476);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, rgba(204, 43, 94, 0.9), rgba(117, 58, 136, 0.9));
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: rgba(0, 0, 0, 0.8);
         z-index: 1; }
       #Slider .carousel-inner .carousel-item .carousel-caption {
         text-align: center;
@@ -697,30 +712,39 @@ ul.social-buttons {
               width: 100%; }
           #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-lead-in {
             font-size: 30px;
-            font-style: italic;
-            line-height: 25px;
             margin-bottom: 25px;
-            font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif; }
+            font-family: 'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif;
+            opacity: .8;
+            font-weight: 600;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            line-height: 40px; }
           #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-description {
             font-weight: 100;
-            font-size: 1.2em; }
+            font-size: 1.2em;
+            opacity: .8;
+            line-height: 1.3em;
+            font-family: 'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif; }
             @media screen and (min-width: 768px) {
               #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-description {
                 font-size: 1.5em; } }
           #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .list-platforms .list-item {
             font-size: 1.5em;
-            font-family: sans-serif; }
+            font-family: sans-serif;
+            opacity: .8; }
             #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .list-platforms .list-item i {
               font-size: 2em; }
               @media screen and (min-width: 1024px) {
                 #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .list-platforms .list-item i {
                   font-size: 3em; } }
           #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .list-cloud-benefits .list-item {
-            font-size: 1em;
-            font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif; }
-            @media screen and (min-width: 1024px) {
-              #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .list-cloud-benefits .list-item {
-                font-size: 1.5em; } }
+            font-size: 1.3em;
+            font-family: 'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif;
+            line-height: 2em;
+            opacity: .8; }
+          @media screen and (min-width: 1024px) {
+            #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .list-cloud-benefits {
+              padding-left: 120px; } }
           #Slider .carousel-inner .carousel-item .carousel-caption .intro-text #laravel-logo {
             border-left: 1px solid #dee0df;
             margin-left: 30px;
@@ -736,7 +760,7 @@ ul.social-buttons {
     width: 100%;
     height: auto; } }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-heading {
     font-size: 75px;
     font-weight: 700;
@@ -751,7 +775,5 @@ ul.social-buttons {
       font-size: 0; }
   #Slider .carousel-inner .carousel-item .carousel-caption .intro-text .intro-lead-in {
     font-size: 40px;
-    font-style: italic;
-    line-height: 40px;
-    margin-bottom: 25px;
-    font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif; } }
+    line-height: 50px;
+    margin-bottom: 25px; } }

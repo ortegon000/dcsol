@@ -1,17 +1,14 @@
 // Styling for the contact section
 section#contact {
-  background-color: $gray-900;
-  background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/footer_lodyas.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  .section-heading {
-    color: $white;
-  }
+    border-top: 1px solid rgba(red, .4);
   .form-group {
     margin-bottom: 25px;
     input,
     textarea {
       padding: 20px;
+      border: none;
+      border-bottom: 1px solid rgba(black, .6);
+      border-radius: 0;
     }
     input.form-control {
       height: auto;
@@ -26,24 +23,24 @@ section#contact {
   }
   ::-webkit-input-placeholder {
     font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
+    color: $gray-600;
+    @include quick-sand;
   }
   :-moz-placeholder {
     font-weight: 700;
     color: $gray-400;
     /* Firefox 18- */
-    @include heading-font;
+    @include quick-sand;
   }
   ::-moz-placeholder {
     font-weight: 700;
     color: $gray-400;
     /* Firefox 19+ */
-    @include heading-font;
+    @include quick-sand;
   }
   :-ms-input-placeholder {
     font-weight: 700;
     color: $gray-400;
-    @include heading-font;
+    @include quick-sand;
   }
 }
