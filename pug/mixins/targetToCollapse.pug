@@ -1,3 +1,5 @@
+-var path = 'https://raw.githubusercontent.com/ortegon000/dcsol/master/img/portfolio/'
+//-var path = '/img/portfolio/'
 mixin targetToCollapse(href, collapseName, imageName, collapseDescription)
     .col-sm-12.col-lg-4
         .card-body.examples-cards
@@ -15,7 +17,7 @@ mixin targetToCollapse(href, collapseName, imageName, collapseDescription)
                         .portfolio-hover-content
                             i.fa.fa-search.fa-3x
                     //img.img-fluid.w-100(src=imgPath + imageName, alt=name)
-                    img.img-fluid.w-100.h-100(src='/img/portfolio/' + imageName, alt=name)
+                    img.img-fluid.w-100.h-100(src=path + imageName, alt=name)
                 .portfolio-caption
                     h4.text-primary #{collapseName}
                     p.text-muted #{collapseDescription}
