@@ -11,7 +11,7 @@
 			overflow: hidden;
 			background-size: cover;
 			background-position: bottom right;
-			background-repeat: no-repeat; 
+			background-repeat: no-repeat;
 			&:after {
 				content: '';
 				position: absolute;
@@ -35,7 +35,7 @@
 				.intro-text {
 					padding-top: 150px;
 					padding-bottom: 100px;
-					
+
 					.intro-heading {
 						font-size: 50px;
 						//font-weight: 700;
@@ -61,12 +61,13 @@
 
 					.intro-description {
 						font-weight: 100;
-						font-size: 1.2em;
+						font-size: 18px;
 						opacity: .8;
 						line-height: 1.3em;
-						font-family: 'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif;
+						// font-family: 'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif;
 						@media screen and (min-width: 768px) {
-							font-size: 1.5em;
+							width: 70%;
+							margin: 0 auto;
 						}
 					}
 
@@ -87,13 +88,13 @@
 
 					.list-cloud-benefits {
 						.list-item {
-							font-size: 1.3em;
+							font-size: 18px;
 							font-family: 'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif;
 							line-height: 2em;
 							opacity: .8;
 						}
 						@media screen and (min-width: 1024px) {
-							padding-left: 120px;
+							padding-left: 140px;
 						}
 					}
 
@@ -149,7 +150,7 @@
 						}
 
 						.intro-lead-in {
-							font-size: 40px;
+							font-size: 30px;
 							line-height: 50px;
 							margin-bottom: 25px;
 						}

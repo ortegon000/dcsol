@@ -37,9 +37,10 @@ h6 {
 section {
   padding: 100px 0;
   h2.section-heading {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 0;
     margin-bottom: 15px;
+    opacity: .8;
   }
   h3.section-subheading {
     font-size: 16px;
@@ -58,13 +59,13 @@ section {
 
 // Button Styles
 .btn {
-  @include heading-font;
+  @include quick-sand;
   font-weight: 700;
 }
 
 .btn-xl {
-  font-size: 18px;
-  padding: 20px 40px;
+  font-size: 16px;
+  padding: 15px 30px;
 }
 
 .btn-primary {
@@ -107,7 +108,6 @@ body {
 }
 
 .quickSand-title {
-    font-size: 30px;
     margin-bottom: 25px;
     font-family: 'Quicksand','Helvetica Neue',Helvetica,Arial,sans-serif;
     opacity: .7;
