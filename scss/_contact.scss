@@ -7,7 +7,7 @@ section#contact {
     textarea {
       padding: 20px;
       border: none;
-      border-bottom: 1px solid rgba(black, .6);
+      border-bottom: 1px solid rgba(black, .2);
       border-radius: 0;
     }
     input.form-control {
@@ -22,8 +22,8 @@ section#contact {
     box-shadow: none;
   }
   ::-webkit-input-placeholder {
-    font-weight: 700;
-    color: $gray-600;
+    font-weight: lighter;
+    color: $gray-500;
     @include quick-sand;
   }
   :-moz-placeholder {
@@ -42,5 +42,8 @@ section#contact {
     font-weight: 700;
     color: $gray-400;
     @include quick-sand;
+  }
+  .contact-title {
+      opacity: .6;
   }
 }
