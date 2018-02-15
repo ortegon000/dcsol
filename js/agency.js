@@ -479,6 +479,15 @@
             }
         }
     });
+
+    // light gallery - image manager
+    // Light Gallery
+    $('#image-manager').lightGallery({
+        thumbnail: true,
+        animateThumb: true,
+        showThumbByDefault: false,
+        selector: '.item'
+    });
 })(jQuery); // End of use strict
 
 

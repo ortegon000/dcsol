@@ -1,0 +1,21 @@
+include ../../../mixins/galleryItem
+// -var path = 'https://raw.githubusercontent.com/ortegon000/dcsol/master/img/portfolio/app-images/'
+-var path = '/img/portfolio/img-manager/'
+
+#files-management.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+    #image-manager.row.clearfix
+        +galleryItem('img-manager-login.png', 'Acceso al gestor de imagenes')
+        +galleryItem('menu-img-manager.png', 'Menu del gestor de imagenes')
+        +galleryItem('view-upload-file.png', 'Vista donde se muestran las imagenes que hemos subido')
+        +galleryItem('upload-file.png', 'Formulario para subir nuestra imagen')
+        +galleryItem('img-uploaded-successfully.png', 'Nuestra imagen ha sido subida exitosamente')
+        +galleryItem('edit-img.png', 'Podemos editar nombre, categoría, descripción de la imagen')
+        +galleryItem('general-view-img.png', 'Vista general de la imagen')
+        +galleryItem('delete-img.png', 'Eliminar imagen')
+        +galleryItem('menu-img-categories.png', 'Menu de categorias de imagenes')
+        +galleryItem('view-img-categories.png', 'Listado de las categorias')
+        +galleryItem('add-new-category.png', 'Agregar nueva categoria')
+        +galleryItem('category-created-successfully.png', 'Categoria creada exitosamente')
+        +galleryItem('general-view-category.png', 'Vista general de la categoria')
+        +galleryItem('edit-category.png', 'Editar categoria')
+        +galleryItem('delete-category.png', 'Eliminar categoria')

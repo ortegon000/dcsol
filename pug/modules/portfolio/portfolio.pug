@@ -9,14 +9,17 @@ section#portfolio
             .col-md-12
                 ul#myTab.nav.nav-tabs(role='tablist')
                     li.nav-item
-                        a#examples-tab.nav-link.active(data-toggle='tab', href='#ejemplos', role='tab', aria-controls='home', aria-selected='true') Ejemplos
+                        a#examples-tab.nav-link.active(data-toggle='tab', href='#ejemplos', role='tab', aria-controls='examples', aria-selected='true') Ejemplos
                     li.nav-item
-                        a#samples-tab.nav-link(data-toggle='tab', href='#muestra', role='tab', aria-controls='profile', aria-selected='false') Muestra app almacen
+                        a#samples-tab.nav-link(data-toggle='tab', href='#muestra', role='tab', aria-controls='samples', aria-selected='false') Muestra app almacen
+                    li.nav-item
+                        a#files-management-tab.nav-link(data-toggle='tab', href='#files-management', role='tab', aria-controls='files-management', aria-selected='false') Gestion de archivos
 
                 .card.bg-transparent.border-0
                     .card-body
                         .tab-content#tablesGroup
                             include tabs/examples
                             include tabs/samples
+                            include tabs/files-management
     #test
         svg#svg

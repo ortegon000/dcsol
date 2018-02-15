@@ -6,3 +6,5 @@ mixin galleryItem(imageName, dataSubHTML)
         //    img(src=path+imageName, width="100%", style='margin-bottom: 15px')
         a.item.item-gallery-link(href=path + imageName, data-sub-html=dataSubHTML)
             img.item-gallery-image(src=path + imageName, width="100%", alt=dataSubHTML, title=dataSubHTML)
+            .overlay
+                i.fa.fa-search

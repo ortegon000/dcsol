@@ -299,7 +299,8 @@ header.masthead {
   #portfolio #ms-my-select {
     margin: 0 auto; }
   #portfolio #samples-tab,
-  #portfolio #examples-tab {
+  #portfolio #examples-tab,
+  #portfolio #files-management-tab {
     color: black;
     font-family: 'Quicksand' !important; }
   #portfolio .border-customized {
@@ -326,6 +327,39 @@ header.masthead {
     margin-bottom: 35px; }
     #portfolio .gallery-item-portfolio .item-gallery-image {
       height: auto; }
+  #portfolio #image-manager .gallery-item-portfolio {
+    height: 200px;
+    position: relative;
+    padding: 0; }
+    #portfolio #image-manager .gallery-item-portfolio img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transition: all .3s linear; }
+    #portfolio #image-manager .gallery-item-portfolio:hover img {
+      transform: scale(1.1); }
+    #portfolio #image-manager .gallery-item-portfolio .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(0, 140, 186, 0.8);
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #portfolio #image-manager .gallery-item-portfolio .overlay i {
+        color: white;
+        font-size: 3em; }
+      #portfolio #image-manager .gallery-item-portfolio .overlay:hover {
+        opacity: 1; }
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
