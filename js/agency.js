@@ -229,10 +229,14 @@
     // Collapse
     var group = $('#tablesGroup');
     var samples = $('#samples-tab');
+    var filesTab = $('#files-management-tab');
     group.on('show.bs.collapse','.collapse', function() {
         group.find('.collapse.show').collapse('hide');
     });
     samples.on('click', function () {
+        group.find('.collapse.show').collapse('hide');
+    });
+    filesTab.on('click', function () {
         group.find('.collapse.show').collapse('hide');
     });
 
