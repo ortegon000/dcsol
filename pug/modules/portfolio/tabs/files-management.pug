@@ -1,8 +1,10 @@
 include ../../../mixins/galleryItem
-// -var path = 'https://raw.githubusercontent.com/ortegon000/dcsol/master/img/portfolio/app-images/'
--var path = '/img/portfolio/img-manager/'
+
 
 #files-management.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+    // -var path = '/img/portfolio/img-manager/'
+    -var path = 'https://raw.githubusercontent.com/ortegon000/dcsol/master/img/portfolio/img-manager/'
+
     #image-manager.row.clearfix
         +galleryItem('img-manager-login.png', 'Acceso al gestor de imagenes')
         +galleryItem('menu-img-manager.png', 'Menu del gestor de imagenes')
