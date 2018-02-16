@@ -230,6 +230,7 @@
     var group = $('#tablesGroup');
     var samples = $('#samples-tab');
     var filesTab = $('#files-management-tab');
+    var ecommerceTab = $('#ecommerce-tab');
     group.on('show.bs.collapse','.collapse', function() {
         group.find('.collapse.show').collapse('hide');
     });
@@ -237,6 +238,9 @@
         group.find('.collapse.show').collapse('hide');
     });
     filesTab.on('click', function () {
+        group.find('.collapse.show').collapse('hide');
+    });
+    ecommerceTab.on('click', function () {
         group.find('.collapse.show').collapse('hide');
     });
 
@@ -487,6 +491,12 @@
     // light gallery - image manager
     // Light Gallery
     $('#image-manager').lightGallery({
+        thumbnail: true,
+        animateThumb: true,
+        showThumbByDefault: false,
+        selector: '.item'
+    });
+    $('#ecommerce').lightGallery({
         thumbnail: true,
         animateThumb: true,
         showThumbByDefault: false,

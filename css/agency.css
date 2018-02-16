@@ -300,7 +300,8 @@ header.masthead {
     margin: 0 auto; }
   #portfolio #samples-tab,
   #portfolio #examples-tab,
-  #portfolio #files-management-tab {
+  #portfolio #files-management-tab,
+  #portfolio #ecommerce-tab {
     color: black;
     font-family: 'Quicksand' !important; }
   #portfolio .border-customized {
