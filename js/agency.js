@@ -496,7 +496,7 @@
         showThumbByDefault: false,
         selector: '.item'
     });
-    $('#ecommerce').lightGallery({
+    $('.ecommerceImgs').lightGallery({
         thumbnail: true,
         animateThumb: true,
         showThumbByDefault: false,

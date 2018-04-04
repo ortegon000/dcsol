@@ -301,7 +301,8 @@ header.masthead {
   #portfolio #samples-tab,
   #portfolio #examples-tab,
   #portfolio #files-management-tab,
-  #portfolio #ecommerce-tab {
+  #portfolio #ecommerceClient-tab,
+  #portfolio #ecommerceAdmin-tab {
     color: black;
     font-family: 'Quicksand' !important; }
   #portfolio .border-customized {
@@ -328,6 +329,8 @@ header.masthead {
     margin-bottom: 35px; }
     #portfolio .gallery-item-portfolio .item-gallery-image {
       height: auto; }
+  #portfolio .icon-search {
+    opacity: 0; }
   #portfolio #image-manager .gallery-item-portfolio {
     height: 200px;
     position: relative;
@@ -361,6 +364,8 @@ header.masthead {
         font-size: 3em; }
       #portfolio #image-manager .gallery-item-portfolio .overlay:hover {
         opacity: 1; }
+        #portfolio #image-manager .gallery-item-portfolio .overlay:hover i {
+          opacity: 1; }
 
 @media (min-width: 767px) {
   #portfolio .portfolio-item {

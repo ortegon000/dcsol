@@ -102,7 +102,8 @@
 	#samples-tab,
 	#examples-tab,
 	#files-management-tab,
-	#ecommerce-tab{
+	#ecommerceClient-tab,
+	#ecommerceAdmin-tab{
 		color: black;
 		font-family: 'Quicksand' !important;
 	}
@@ -146,6 +147,10 @@
 		}
 	}
 
+	.icon-search {
+		opacity: 0;
+	}
+
 	#image-manager .gallery-item-portfolio {
 		height: 200px;
 		position: relative;
@@ -185,6 +190,9 @@
 			}
 			&:hover {
 				opacity: 1;
+				i {
+					opacity: 1;
+				}
 			}
 		}
 	}

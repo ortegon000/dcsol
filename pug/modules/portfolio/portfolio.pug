@@ -15,7 +15,9 @@ section#portfolio
                     li.nav-item
                         a#files-management-tab.nav-link(data-toggle='tab', href='#files-management', role='tab', aria-controls='files-management', aria-selected='false') Gestion de archivos
                     li.nav-item
-                        a#ecommerce-tab.nav-link(data-toggle='tab', href='#ecommerce', role='tab', aria-controls='files-management', aria-selected='false') E-commerce
+                        a#ecommerceClient-tab.nav-link(data-toggle='tab', href='#ecommerceClient', role='tab', aria-controls='files-management', aria-selected='false') Tienda en linea
+                    //li.nav-item
+                        a#ecommerceAdmin-tab.nav-link(data-toggle='tab', href='#ecommerceAdmin', role='tab', aria-controls='files-management', aria-selected='false') Tienda en linea - administración
 
                 .card.bg-transparent.border-0
                     .card-body
@@ -23,6 +25,7 @@ section#portfolio
                             include tabs/examples
                             include tabs/samples
                             include tabs/files-management
-                            include tabs/e-commerce
+                            include tabs/e-commerce-client
+                            //include tabs/e-commerce-admin
     #test
         svg#svg

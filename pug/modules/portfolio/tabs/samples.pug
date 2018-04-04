@@ -1,7 +1,8 @@
 include ../../../mixins/galleryItem
 
 #muestra.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
-    -var path = 'https://raw.githubusercontent.com/ortegon000/dcsol/master/img/portfolio/app-images/'
+    - var path = 'https://raw.githubusercontent.com/ortegon000/dcsol/master/img/portfolio/app-images/'
+    // - var path = '/img/portfolio/app-images/'
     #animated-thumbnails.row.clearfix
         +galleryItem('intro-app-almacen.png', 'Intro de app')
         +galleryItem('login-app-almacen.png', 'Login de app')
