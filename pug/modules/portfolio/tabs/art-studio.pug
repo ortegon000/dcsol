@@ -1,0 +1,11 @@
+include ../../../mixins/galleryItem
+#artStudio.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+    -var path = '/img/portfolio/art-studio/'
+    // -var path = 'https://raw.githubusercontent.com/ortegon000/dcsol/master/img/portfolio/ecommerce-images/'
+    #art-studio.init-gallery.row.clearfix
+        +galleryItem('magda-home.png', 'Pagina principal de Magda')
+        +galleryItem('magda-available-picture.png', 'Pintura disponible')
+        +galleryItem('magda-contact-form-picture.png', 'Formulario para comprar pieza de arte')
+        +galleryItem('magda-unavailable-picture.png', 'Si la pintura no esta disponible para su venta aparecera un distintivo rojo')
+        +galleryItem('magda-about.png', 'Seccion "Sobre mi"')
+        +galleryItem('magda-contact.png', 'Seccion "Contacto"')

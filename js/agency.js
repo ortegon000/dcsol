@@ -488,20 +488,14 @@
         }
     });
 
-    // light gallery - image manager
     // Light Gallery
-    $('#image-manager').lightGallery({
+    $('.init-gallery').lightGallery({
         thumbnail: true,
         animateThumb: true,
         showThumbByDefault: false,
         selector: '.item'
     });
-    $('.ecommerceImgs').lightGallery({
-        thumbnail: true,
-        animateThumb: true,
-        showThumbByDefault: false,
-        selector: '.item'
-    });
+    
 })(jQuery); // End of use strict
 
 
