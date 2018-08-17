@@ -303,7 +303,8 @@ header.masthead {
   #portfolio #files-management-tab,
   #portfolio #ecommerceClient-tab,
   #portfolio #art-studio-tab,
-  #portfolio #ecommerceAdmin-tab {
+  #portfolio #ecommerceAdmin-tab,
+  #portfolio #salseamos-tab {
     color: black;
     font-family: 'Quicksand' !important; }
   #portfolio .border-customized {
